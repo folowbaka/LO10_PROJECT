@@ -2,6 +2,25 @@
 {
     list-style: none;
     font-weight: bold;
-    color: #8052be;
     text-align: right;
+}
+#listeRegion a
+{
+    color: #8052be;
+}
+#annonceBtn .btn
+{
+    width: 100%;
+    border: 1px #8052be solid;
+}
+#tableBtn
+{
+    background-color:#8052be;
+    color: white;
+    margin-bottom: 20px;
+}
+#rechercheFranceBtn,#rechercheMoiBtn
+{
+    color:#8052be;
+    margin-bottom: 10px;
 }
