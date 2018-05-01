@@ -16,4 +16,13 @@ class AnnonceController extends Controller
             'controller_name' => 'AnnonceController',
         ]);
     }
+    /**
+     * @Route("/annonce/recherche/{localisation}", name="rechercheAnnonce")
+     */
+    public function recherche($localisation="france")
+    {
+        return $this->render('annonce/recherche.html.twig', [
+            'controller_name' => 'AnnonceController',
+        ]);
+    }
 }

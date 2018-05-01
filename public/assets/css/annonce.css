@@ -24,3 +24,13 @@
     color:#8052be;
     margin-bottom: 10px;
 }
+.regionSvg path:hover
+{
+    fill: #343a40;
+    cursor: pointer;
+}
+#listeRegion a:hover
+{
+    color: #343a40!important;
+    text-decoration: underline!important;
+}
