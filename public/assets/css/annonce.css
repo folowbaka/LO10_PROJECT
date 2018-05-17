@@ -19,10 +19,18 @@
     color: white;
     margin-bottom: 20px;
 }
+#tableBtn:hover
+{
+    background-color: #6c39be;
+}
 #rechercheFranceBtn,#rechercheMoiBtn
 {
     color:#8052be;
     margin-bottom: 10px;
+}
+#rechercheFranceBtn:hover,#rechercheMoiBtn:hover
+{
+    background-color: rgba(128, 82, 190, 0.31);
 }
 .regionSvg path:hover
 {
