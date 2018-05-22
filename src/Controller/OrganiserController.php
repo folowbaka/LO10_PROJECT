@@ -2,8 +2,10 @@
 
 namespace App\Controller;
 
+use App\Form\TableType;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use App\Entity\Table;
 
 class OrganiserController extends Controller
 {
@@ -12,8 +14,9 @@ class OrganiserController extends Controller
      */
     public function index()
     {
-        return $this->render('organiser/index.html.twig', [
-            'controller_name' => 'OrganiserController',
-        ]);
+        $table=new Table();
+        $form=$this->createForm(TableType::class,$table);
+        return $this->render('organiser/index.html.twig', array('form'=>$form->createView()
+        ));
     }
 }

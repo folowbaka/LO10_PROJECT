@@ -29,11 +29,6 @@ class Table
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $categorie;
-
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
     private $emailOrganisateur;
 
     /**
@@ -55,6 +50,12 @@ class Table
      * @ORM\Column(type="string", length=255, nullable=true)
      */
     private $adresse;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\TableType", inversedBy="tables")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $type;
 
     public function getId()
     {
@@ -84,19 +85,6 @@ class Table
 
         return $this;
     }
-
-    public function getCategorie(): ?string
-    {
-        return $this->categorie;
-    }
-
-    public function setCategorie(string $categorie): self
-    {
-        $this->categorie = $categorie;
-
-        return $this;
-    }
-
     public function getEmailOrganisateur(): ?string
     {
         return $this->emailOrganisateur;
@@ -153,6 +141,18 @@ class Table
     public function setAdresse(?string $adresse): self
     {
         $this->adresse = $adresse;
+
+        return $this;
+    }
+
+    public function getType(): ?TableType
+    {
+        return $this->type;
+    }
+
+    public function setType(?TableType $type): self
+    {
+        $this->type = $type;
 
         return $this;
     }
