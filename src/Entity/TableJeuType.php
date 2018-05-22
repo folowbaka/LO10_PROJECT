@@ -7,9 +7,9 @@ use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass="App\Repository\TableTypeRepository")
+ * @ORM\Entity(repositoryClass="App\Repository\TableJeuTypeRepository")
  */
-class TableType
+class TableJeuType
 {
     /**
      * @ORM\Id()
@@ -24,13 +24,13 @@ class TableType
     private $nom;
 
     /**
-     * @ORM\OneToMany(targetEntity="App\Entity\Table", mappedBy="type")
+     * @ORM\OneToMany(targetEntity="App\Entity\TableJeu", mappedBy="type")
      */
-    private $tables;
+    private $tableJeux;
 
     public function __construct()
     {
-        $this->tables = new ArrayCollection();
+        $this->tableJeux = new ArrayCollection();
     }
 
     public function getId()
@@ -51,30 +51,30 @@ class TableType
     }
 
     /**
-     * @return Collection|Table[]
+     * @return Collection|TableJeu[]
      */
-    public function getTables(): Collection
+    public function getTableJeux(): Collection
     {
-        return $this->tables;
+        return $this->tableJeux;
     }
 
-    public function addTable(Table $table): self
+    public function addTableJeux(TableJeu $tableJeux): self
     {
-        if (!$this->tables->contains($table)) {
-            $this->tables[] = $table;
-            $table->setType($this);
+        if (!$this->tableJeux->contains($tableJeux)) {
+            $this->tableJeux[] = $tableJeux;
+            $tableJeux->setType($this);
         }
 
         return $this;
     }
 
-    public function removeTable(Table $table): self
+    public function removeTableJeux(TableJeu $tableJeux): self
     {
-        if ($this->tables->contains($table)) {
-            $this->tables->removeElement($table);
+        if ($this->tableJeux->contains($tableJeux)) {
+            $this->tableJeux->removeElement($tableJeux);
             // set the owning side to null (unless already changed)
-            if ($table->getType() === $this) {
-                $table->setType(null);
+            if ($tableJeux->getType() === $this) {
+                $tableJeux->setType(null);
             }
         }
 

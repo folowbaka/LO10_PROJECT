@@ -2,25 +2,25 @@
 
 namespace App\Repository;
 
-use App\Entity\Table;
+use App\Entity\TableJeuType;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Symfony\Bridge\Doctrine\RegistryInterface;
 
 /**
- * @method Table|null find($id, $lockMode = null, $lockVersion = null)
- * @method Table|null findOneBy(array $criteria, array $orderBy = null)
- * @method Table[]    findAll()
- * @method Table[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
+ * @method TableJeuType|null find($id, $lockMode = null, $lockVersion = null)
+ * @method TableJeuType|null findOneBy(array $criteria, array $orderBy = null)
+ * @method TableJeuType[]    findAll()
+ * @method TableJeuType[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
  */
-class TableRepository extends ServiceEntityRepository
+class TableJeuTypeRepository extends ServiceEntityRepository
 {
     public function __construct(RegistryInterface $registry)
     {
-        parent::__construct($registry, Table::class);
+        parent::__construct($registry, TableJeuType::class);
     }
 
 //    /**
-//     * @return Table[] Returns an array of Table objects
+//     * @return TableJeuType[] Returns an array of TableJeuType objects
 //     */
     /*
     public function findByExampleField($value)
@@ -37,7 +37,7 @@ class TableRepository extends ServiceEntityRepository
     */
 
     /*
-    public function findOneBySomeField($value): ?Table
+    public function findOneBySomeField($value): ?TableJeuType
     {
         return $this->createQueryBuilder('t')
             ->andWhere('t.exampleField = :val')
