@@ -1,0 +1,11 @@
+#tableJeuForm .form-control-label,#tableJeuForm .col-form-label
+{
+    font-weight: bold;
+}
+#titleFormTable
+{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #8052be;
+    color:#8052be ;
+    margin-bottom: 10px;
+}

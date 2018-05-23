@@ -8,3 +8,12 @@
     margin-top: 10px;
     height: 100%;
 }
+.cardHeaderRoll
+{
+    background-color: #8052be;
+    color: white;
+}
+.card
+{
+    margin-bottom: 10px;
+}

@@ -1,5 +1,8 @@
 {% extends 'base.html.twig' %}
-
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/organiser.css') }}">
+{% endblock %}
 {% block title %}Organiser Table{% endblock %}
 
 {% block body %}
@@ -9,10 +12,11 @@
 </style>
 
     <div class="row">
-        <div class="col-lg-12">
+        <div id="tableJeuForm" class="col-lg-12">
+            <h3 id="titleFormTable">Organiser une Table</h3>
             {{ form_start(form) }}
             <div class="card">
-                <h3 class="card-header cardFormHeader">Votre Table</h3>
+                <h3 class="card-header cardHeaderRoll">Votre Table</h3>
                 <div class="card-body">
                     {{ form_row(form.titre) }}
                     {{ form_row(form.type) }}
@@ -20,14 +24,14 @@
                 </div>
             </div>
             <div class="card">
-                <h3 class="card-header cardFormHeader">Localisation de votre Table</h3>
+                <h3 class="card-header cardHeaderRoll">Localisation de votre Table</h3>
                 <div class="card-body">
                     {{ form_row(form.ville) }}
                     {{ form_row(form.adresse) }}
                 </div>
             </div>
             <div class="card">
-                <h3 class="card-header cardFormHeader">Vos informations de contact</h3>
+                <h3 class="card-header cardHeaderRoll">Vos informations de contact</h3>
                 <div class="card-body">
                     {{ form_end(form) }}
                 </div>
