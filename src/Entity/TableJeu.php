@@ -17,6 +17,12 @@ class TableJeu
     private $id;
 
     /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\TableJeuType", inversedBy="tableJeux")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $type;
+
+    /**
      * @ORM\Column(type="string", length=255)
      */
     private $titre;
@@ -37,24 +43,30 @@ class TableJeu
     private $adresse;
 
     /**
-     * @ORM\Column(type="string", length=60)
+     * @ORM\Column(type="string", length=255)
      */
     private $emailOrganisateur;
 
     /**
-     * @ORM\Column(type="string", length=40, nullable=true)
+     * @ORM\Column(type="string", length=255)
      */
     private $telephone;
-
-    /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\TableJeuType", inversedBy="tableJeux")
-     * @ORM\JoinColumn(nullable=false)
-     */
-    private $type;
 
     public function getId()
     {
         return $this->id;
+    }
+
+    public function getType(): ?TableJeuType
+    {
+        return $this->type;
+    }
+
+    public function setType(?TableJeuType $type): self
+    {
+        $this->type = $type;
+
+        return $this;
     }
 
     public function getTitre(): ?string
@@ -122,21 +134,9 @@ class TableJeu
         return $this->telephone;
     }
 
-    public function setTelephone(?string $telephone): self
+    public function setTelephone(string $telephone): self
     {
         $this->telephone = $telephone;
-
-        return $this;
-    }
-
-    public function getType(): ?TableJeuType
-    {
-        return $this->type;
-    }
-
-    public function setType(?TableJeuType $type): self
-    {
-        $this->type = $type;
 
         return $this;
     }
