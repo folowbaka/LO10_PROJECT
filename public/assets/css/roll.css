@@ -17,7 +17,6 @@
 .typeJeuFloat
 {
     float: left;
-    display: block;
 }
 .villeJeuFloat
 {
@@ -38,4 +37,9 @@
 .cardTitreJeu
 {
     color: #8052be;
+}
+.borderPurple
+{
+    border-bottom: 1px solid #8052be;
+    width: 100%;
 }
