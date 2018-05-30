@@ -21,11 +21,12 @@ class Table
             $titre=$table->getTitre();
             $ville=$table->getVille();
             $type=$table->getType()->getId();
+            $idJeu=$table->getId();
             if($type==1)
                 $type="Société";
             else
                 $type="Role";
-            $html.="<a  href=\"\" class=\"list-group-item list-group-item-action\"><div class=\"\">
+            $html.="<a  href=\"/fiche/table/$idJeu\" class=\"list-group-item list-group-item-action\"><div class=\"\">
                 <img class=\"img-fluid\" src=\"/assets/images/slimedoogo.png\"  alt=\"Card image cap\">
                 <div class=\"\">
                     <h5 class=\"card-title cardTitreJeu text-center\">$titre</h5>
