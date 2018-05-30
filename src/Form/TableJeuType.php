@@ -29,7 +29,7 @@ class TableJeuType extends AbstractType
             ->add('type',EntityType::class,array('class'=>\App\Entity\TableJeuType::class,'choice_label'=>'nom','multiple'=>false,'expanded'=>true,'attr'=>array('class'=>'form-check-inline'),'label'=>'Type de jeu'))
             ->add('description',TextareaType::class,array('attr'=>array('rows'=>10)))
             ->add('ville',TextType::class)
-            ->add('adresse',TextType::class)
+            ->add('adresse',TextType::class,array('required'=>false))
             ->add('emailOrganisateur',EmailType::class,array('label'=>'Email'))
             ->add('telephone',TelType::class)
             ->add('save',SubmitType::class)
