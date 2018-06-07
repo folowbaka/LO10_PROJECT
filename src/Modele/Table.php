@@ -30,8 +30,8 @@ class Table
                 <img class=\"img-fluid\" src=\"/assets/images/slimedoogo.png\"  alt=\"Card image cap\">
                 <div class=\"\">
                     <h5 class=\"card-title cardTitreJeu text-center\">$titre</h5>
-                    <p class=\"card-text villeJeuFloat\">$ville</p>
                     <p class=\"card-text typeJeuFloat\">$type</p>
+                    <p class=\"card-text villeJeuFloat\">$ville</p>
                 </div>
                </div></a>";
         }
