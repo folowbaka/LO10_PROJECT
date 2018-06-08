@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d05732d-9b22-4e54-801a-4034b9a6df7c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/public/assets/css/recherche.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/nepone.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Region.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/RegionRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Departement.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/DepartementRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/AnnonceController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AnnonceController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/annonce/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/annonce/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/annonce/recherche.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/annonce/recherche.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Region.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Region.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/TableJeu.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/TableJeu.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,36 +25,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/annonce/index.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="92" column="49" selection-start-line="92" selection-start-column="49" selection-end-line="94" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AccueilController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/AccueilController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
-              <folding>
-                <element signature="e#34#58#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HttpKernel.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/symfony/http-kernel/HttpKernel.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="517">
-              <caret line="151" selection-start-line="151" selection-end-line="151" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Kernel.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vendor/symfony/http-kernel/Kernel.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -111,9 +79,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Region.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Region.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Entity/Region.php">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="313">
+              <caret line="39" column="35" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AppFixtures.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/DataFixtures/AppFixtures.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="203">
+              <caret line="27" column="36" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
+              <folding>
+                <element signature="e#124#146#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Departement.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Entity/Departement.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="139">
+              <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TableJeu.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Entity/TableJeu.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2016" />
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -156,7 +156,6 @@
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/src/Form/TableType.php" />
         <option value="$PROJECT_DIR$/config/packages/twig.yaml" />
-        <option value="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" />
         <option value="$PROJECT_DIR$/src/Entity/Table.php" />
         <option value="$PROJECT_DIR$/src/Repository/TableJeuRepository.php" />
         <option value="$PROJECT_DIR$/src/Entity/TableJeuType.php" />
@@ -178,6 +177,9 @@
         <option value="$PROJECT_DIR$/src/Controller/AnnonceController.php" />
         <option value="$PROJECT_DIR$/templates/annonce/recherche.html.twig" />
         <option value="$PROJECT_DIR$/templates/annonce/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/Entity/Departement.php" />
+        <option value="$PROJECT_DIR$/src/Entity/Region.php" />
+        <option value="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" />
       </list>
     </option>
   </component>
@@ -371,6 +373,12 @@
               <item name="lo10" type="b2602c69:ProjectViewProjectNode" />
               <item name="lo10" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="DataFixtures" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lo10" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lo10" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Entity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -384,12 +392,6 @@
               <item name="lo10" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Modele" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lo10" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lo10" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Repository" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lo10" type="b2602c69:ProjectViewProjectNode" />
@@ -557,7 +559,7 @@
       <workItem from="1527627074898" duration="14461000" />
       <workItem from="1527686899732" duration="46000" />
       <workItem from="1528411377201" duration="3605000" />
-      <workItem from="1528457825751" duration="1331000" />
+      <workItem from="1528457825751" duration="3334000" />
     </task>
     <task id="LOCAL-00001" summary="Ajout page Annonce">
       <created>1525099924757</created>
@@ -692,7 +694,14 @@
       <option name="project" value="LOCAL" />
       <updated>1527643943057</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="AJOUT : Entity Region">
+      <created>1528463163335</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1528463163335</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -704,7 +713,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86755000" />
+    <option name="totallyTimeSpent" value="88758000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -717,6 +726,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49949798" weight="0.32917964" />
@@ -729,13 +739,13 @@
       <window_info id="npm" order="2" sideWeight="0.20783132" side_tool="true" weight="0.22289157" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.498996" weight="0.32917964" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.79256964" visible="true" weight="0.24397591" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.79256964" visible="true" weight="0.24397591" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" sideWeight="0.20783132" side_tool="true" weight="0.22289157" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="2" sideWeight="0.20743035" side_tool="true" weight="0.22289157" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49698794" visible="true" weight="0.39875388" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49698794" visible="true" weight="0.39875388" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="PHP-CGI Server" order="7" />
@@ -771,7 +781,8 @@
     <MESSAGE value="Ajout ACCUEIL : Affichage des dernières tables créées" />
     <MESSAGE value="Creation des Fiches de Table" />
     <MESSAGE value="UPDATE des fiches de table" />
-    <option name="LAST_COMMIT_MESSAGE" value="UPDATE des fiches de table" />
+    <MESSAGE value="AJOUT : Entity Region" />
+    <option name="LAST_COMMIT_MESSAGE" value="AJOUT : Entity Region" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -779,20 +790,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/annonce/recherche.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="28" column="43" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/css/roll.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/assets/css/annonce.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
@@ -900,13 +897,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Migrations/Version20180522230457.php" />
     <entry file="file://$PROJECT_DIR$/src/Migrations/Version20180522230538.php" />
-    <entry file="file://$PROJECT_DIR$/src/DataFixtures/AppFixtures.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../bin/php/php7.2.4/php.ini">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="14928">
@@ -968,6 +958,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="18" column="122" selection-start-line="18" selection-start-column="122" selection-end-line="18" selection-end-column="122" />
+          <folding>
+            <element signature="e#34#58#0#PHP" expanded="true" />
+            <element signature="e#500#529#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1100,8 +1094,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/Departement.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/TableJeu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2016" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Entity/Region.php">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="39" column="35" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DataFixtures/AppFixtures.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="27" column="36" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
+          <folding>
+            <element signature="e#124#146#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">
