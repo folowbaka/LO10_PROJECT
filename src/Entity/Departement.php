@@ -11,7 +11,7 @@ class Departement
 {
     /**
      * @ORM\Id()
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="string",length=255)
      */
     private $code;
 
@@ -26,6 +26,19 @@ class Departement
      */
     private $region;
 
+    public function __construct()
+    {
+        $numargs = func_num_args();
+        if($numargs==3)
+        {
+            $nom=func_get_arg(0);
+            $region=func_get_arg(1);
+            $code=func_get_arg(2);
+            $this->setNom($nom);
+            $this->setRegion($region);
+            $this->setCode($code);
+        }
+    }
     public function getNom(): ?string
     {
         return $this->nom;
@@ -38,12 +51,12 @@ class Departement
         return $this;
     }
 
-    public function getCode(): ?int
+    public function getCode(): ?string
     {
         return $this->code;
     }
 
-    public function setCode(int $code): self
+    public function setCode(string $code): self
     {
         $this->code = $code;
 

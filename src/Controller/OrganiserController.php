@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Entity\Region;
 use App\Form\TableJeuType;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
@@ -21,6 +22,9 @@ class OrganiserController extends Controller
         if($form->isSubmitted() && $form->isValid())
         {
             $entityManager=$this->getDoctrine()->getManager();
+            $region=$this->getDoctrine()
+                ->getRepository(Region::class)->find(2);
+            $table->setRegion($region);
             $entityManager->persist($table);
             $entityManager->flush();
 
