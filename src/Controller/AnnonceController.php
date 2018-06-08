@@ -21,8 +21,17 @@ class AnnonceController extends Controller
      */
     public function recherche($localisation="france")
     {
-        return $this->render('annonce/recherche.html.twig', [
-            'controller_name' => 'AnnonceController',
-        ]);
+        $zoneRecherche=array("near"=>"Autour de moi", "france"=>"Toute la France","alsace"=>"Alsace","aquitaine"=>"Aquitaine","basse-normandie"=>"Basse-Normandie",
+            "bourgone"=>"Bourgogne","bretagne"=>"Bretagne","centre"=>"Centre", "champagne-ardenne"=>"Champagne-Ardenne","corse"=>"Corse","franche-comte"=>"Franche-Comté",
+            "haute-normandie"=>"Haute-Normandie", "ile-de-france"=>"Ile-de-France","languedoc-roussillon"=>"Languedoc-Roussillon","limousin"=>"Limousin","lorraine"=>"Lorraine",
+            "midi-pyrenees"=>"Midi-Pyrénées","nord-pas-de-calais"=>"Nord-Pas-de-Calais","pays de la loire"=>"Pays de la Loire","picardie"=>"Picardie","poitou-charentes"=>"Poitou-Charentes",
+            "provence-alpes-cote-dazur"=>"Provence-Alpes-Côte d'Azur", "rhone-alpes"=>"Rhône-Alpes");
+        $selectZone="";
+        foreach ($zoneRecherche as $zone)
+        {
+            $selectZone.="<option>$zone</option>";
+        }
+        return $this->render('annonce/recherche.html.twig',array("selectZoneHtml"=>$selectZone)
+        );
     }
 }
