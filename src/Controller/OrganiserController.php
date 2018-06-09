@@ -24,11 +24,10 @@ class OrganiserController extends Controller
         if($form->isSubmitted() && $form->isValid())
         {
             $ville=$table->getVille();
-            $serializer=$this->container->get('jms_serializer');
-            $client= $this->get('eight_points_guzzle.client.geo_gouv');
-            $response=$client->get("/communes?nom=".$ville."&fields=departement");
-            $body=$serializer->deserialize($response->getBody()->getContents(),"array","json");
-            $codeDepartement=$body[0]["departement"]["code"];
+            $villeExplo=explode(" ",$ville);
+            $codePostal=$villeExplo[1];
+            $table->setVille($villeExplo[0]);
+            $codeDepartement=substr($codePostal,0,2);
             $entityManager=$this->getDoctrine()->getManager();
             $departement=$this->getDoctrine()
                 ->getRepository(Departement::class)->find($codeDepartement);
