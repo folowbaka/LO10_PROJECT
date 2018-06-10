@@ -27,6 +27,7 @@ class OrganiserController extends Controller
             $villeExplo=explode(" ",$ville);
             $codePostal=$villeExplo[1];
             $table->setVille($villeExplo[0]);
+            $table->setCodePostal($codePostal);
             $codeDepartement=substr($codePostal,0,2);
             $entityManager=$this->getDoctrine()->getManager();
             $departement=$this->getDoctrine()

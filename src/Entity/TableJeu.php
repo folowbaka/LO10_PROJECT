@@ -58,6 +58,11 @@ class TableJeu
      */
     private $region;
 
+    /**
+     * @ORM\Column(type="string", length=5)
+     */
+    private $codePostal;
+
     public function getId()
     {
         return $this->id;
@@ -155,6 +160,18 @@ class TableJeu
     public function setRegion(?Region $region): self
     {
         $this->region = $region;
+
+        return $this;
+    }
+
+    public function getCodePostal(): ?string
+    {
+        return $this->codePostal;
+    }
+
+    public function setCodePostal(string $codePostal): self
+    {
+        $this->codePostal = $codePostal;
 
         return $this;
     }

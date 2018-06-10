@@ -7,16 +7,15 @@
 {% endblock %}
 {% block body %}
     <div class="container">
-        <form>
+        <form  id="rechercheTableForm" action="{{ path('rechercheAnnonce', {'departement': departement, 'region': region}) }}" method="get">
             <div class="form-row form-group">
                 <div class="col-6">
-                    <input type="text" class="form-control" placeholder="Quelle table recherchez-vous?">
+                    <input  id="searchTable" name="searchTable" type="text" class="form-control" placeholder="Quelle table recherchez-vous?">
                 </div>
                 <div class="col-3">
-                    <select class="form-control">
+                    <select id="selectTypeJeu" name="selectTypeJeu" class="form-control">
                         <option value="all">Tous types de jeu</option>
-                        <option value="jdr">Jeu de rôle</option>
-                        <option value="jds">Jeu de société</option>
+                        {{ typeJeu | raw }}
                     </select>
                 </div>
                 <div class="col-3">
@@ -25,7 +24,7 @@
             </div>
             <div class="form-row form-group">
                 <div class="offset-3 col-3">
-                    <select class="form-control">
+                    <select id="zoneSelect" class="form-control">
                         {{ selectZoneHtml|raw }}
                     </select>
                 </div>
@@ -50,4 +49,5 @@
 {% endblock %}
 {% block javascripts %}
     {{ parent() }}
+    <script src="{{ asset("js/recherche.js") }}"></script>
 {% endblock %}
