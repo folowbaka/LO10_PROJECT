@@ -53,7 +53,7 @@ class TableJeu
     private $telephone;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\Region", inversedBy="tableJeus")
+     * @ORM\ManyToOne(targetEntity="App\Entity\Region", inversedBy="tablesJeu")
      * @ORM\JoinColumn(nullable=false)
      */
     private $region;

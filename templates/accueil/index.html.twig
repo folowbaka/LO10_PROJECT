@@ -3,17 +3,18 @@
 {% block title %} Accueil {% endblock %}
 
 {% block body %}
-
-    <div class="row">
-            <div class="col-lg-3">
-                <div class="">
-                    <h5 class="card-header cardHeaderRoll text-center">Dernières Tables</h5>
+    <div class="container">
+        <div class="row">
+                <div class="col-lg-3">
                     <div class="">
-                        <div class="list-group">
-                            {{ lastTable | raw }}
+                        <h5 class="card-header cardHeaderRoll text-center">Dernières Tables</h5>
+                        <div class="">
+                            <div class="list-group">
+                                {{ lastTable | raw }}
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+        </div>
     </div>
 {% endblock %}

@@ -13,8 +13,7 @@ class Region
 {
     /**
      * @ORM\Id()
-     * @ORM\GeneratedValue()
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="string",length=255)
      */
     private $id;
 
@@ -38,14 +37,16 @@ class Region
         $this->departements = new ArrayCollection();
         $this->tablesJeu = new ArrayCollection();
         $numargs = func_num_args();
-        if($numargs==1)
+        if($numargs==2)
         {
-            $nom=func_get_arg(0);
+            $id=func_get_arg(0);
+            $nom=func_get_arg(1);
+            $this->setId($id);
             $this->setNom($nom);
         }
     }
 
-    public function getId()
+    public function getId(): ?string
     {
         return $this->id;
     }
@@ -58,6 +59,12 @@ class Region
     public function setNom(string $nom): self
     {
         $this->nom = $nom;
+
+        return $this;
+    }
+    public function setId(string $id): self
+    {
+        $this->id = $id;
 
         return $this;
     }
