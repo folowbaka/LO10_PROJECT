@@ -45,13 +45,13 @@ class AnnonceController extends Controller
             }
             else
             {
-                $filter["codePostal"]="$departement";
-                $queryRequest.="WHERE SUBSTRING(t.codePostal,1,2) = :codePostal";
+                $filter["departement"]="$departement";
+                $queryRequest.="WHERE SUBSTRING(t.codePostal,1,2) = :departement";
             }
         }
-        $fuck=$request->query;
         $searchTitre = $request->query->get('searchTable');
         $typeSearch = $request->query->get("selectTypeJeu");
+        $villeSearch=$request->query->get("inputSearchVilleCp");
         if($typeSearch!="" && $typeSearch!="all")
         {
             $queryRequest.=" AND t.type= :typeJeu";
@@ -61,6 +61,14 @@ class AnnonceController extends Controller
         {
             $queryRequest.=" AND t.titre LIKE :searchTitre";
             $filter["searchTitre"]="%".$searchTitre."%";
+        }
+        if($villeSearch!="")
+        {
+            $villeCodepostal=explode(" ",$villeSearch);
+            $queryRequest.=" AND t.ville = :ville";
+            $queryRequest.=" AND t.codePostal = :codePostal";
+            $filter["ville"]=$villeCodepostal[0];
+            $filter["codePostal"]=$villeCodepostal[1];
         }
         foreach ($zoneRecherche as $key=>$zone)
         {

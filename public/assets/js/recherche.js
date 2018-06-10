@@ -33,4 +33,5 @@ $(document).ready(function(){
             $(this).attr("action",urlForm);
         }
     });
+    autocompleteCity(document.getElementById("inputSearchVilleCp"));
 });
