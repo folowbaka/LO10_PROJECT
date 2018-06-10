@@ -17,7 +17,6 @@ class Version20180610124723 extends AbstractMigration
 
         $this->addSql('ALTER SEQUENCE table_jeu_id_seq INCREMENT BY 1');
         $this->addSql('ALTER SEQUENCE table_jeu_type_id_seq INCREMENT BY 1');
-        $this->addSql('DROP SEQUENCE region_id_seq CASCADE');
         $this->addSql('CREATE TABLE table_jeu (id INT NOT NULL, type_id INT NOT NULL, region_id VARCHAR(255) NOT NULL, titre VARCHAR(255) NOT NULL, description TEXT NOT NULL, ville VARCHAR(255) NOT NULL, adresse VARCHAR(255) DEFAULT NULL, email_organisateur VARCHAR(255) NOT NULL, telephone VARCHAR(255) NOT NULL, PRIMARY KEY(id))');
         $this->addSql('CREATE INDEX IDX_8B0107D1C54C8C93 ON table_jeu (type_id)');
         $this->addSql('CREATE INDEX IDX_8B0107D198260155 ON table_jeu (region_id)');
