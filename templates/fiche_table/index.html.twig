@@ -3,25 +3,26 @@
 {% block title %}Fiche Jeu{% endblock %}
 
 {% block body %}
-
-    <div class="row">
-        <div class="card col-lg-8">
-            <img class="card-img-top" src="{{ asset('images/slimedoogo.png') }}" alt="Card image cap" height="400">
-            <div class="card-body">
-                <h4 class="card-title cardTitreJeu">{{ titre }}</h4>
-                <p class="card-text typeJeuFloat">{{ type }}</p>
+    <div class="container">
+        <div class="row">
+            <div class="card col-lg-8">
+                <img class="card-img-top" src="{{ asset('images/slimedoogo.png') }}" alt="Card image cap" height="400">
+                <div class="card-body">
+                    <h4 class="card-title cardTitreJeu">{{ titre }}</h4>
+                    <p class="card-text typeJeuFloat">{{ type }}</p>
+                </div>
+            </div>
+            <div class="card col-lg-4">
+                <div class="card-body">
+                    <h5 class="card-title">Utilisateur</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <h3 class="cardTitreJeu borderPurple text-center">Localisation</h3>
+                </div>
             </div>
         </div>
-        <div class="card col-lg-4">
-            <div class="card-body">
-                <h5 class="card-title">Utilisateur</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <h3 class="cardTitreJeu borderPurple text-center">Localisation</h3>
-            </div>
+        <div class="row">
+            <h3 class="borderPurple cardTitreJeu">Description</h3>
+            <p>{{ description }}</p>
         </div>
-    </div>
-    <div class="row">
-        <h3 class="borderPurple cardTitreJeu">Description</h3>
-        <p>{{ description }}</p>
     </div>
 {% endblock %}

@@ -1,0 +1,10 @@
+#btnRechercher
+{
+    background-color:#8052be;
+    color: white;
+    width: 100%;
+}
+#btnRechercher:hover
+{
+    background-color: #8e6ebe;
+}

@@ -52,6 +52,12 @@ class TableJeu
      */
     private $telephone;
 
+    /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\Region", inversedBy="tablesJeu")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $region;
+
     public function getId()
     {
         return $this->id;
@@ -137,6 +143,18 @@ class TableJeu
     public function setTelephone(string $telephone): self
     {
         $this->telephone = $telephone;
+
+        return $this;
+    }
+
+    public function getRegion(): ?Region
+    {
+        return $this->region;
+    }
+
+    public function setRegion(?Region $region): self
+    {
+        $this->region = $region;
 
         return $this;
     }

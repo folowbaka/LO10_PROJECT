@@ -6,32 +6,42 @@
 {% block title %}Organiser Table{% endblock %}
 
 {% block body %}
-
-    <div class="row">
-        <div id="tableJeuForm" class="col-lg-12">
-            <h3 id="titleFormTable">Organiser une Table</h3>
-            {{ form_start(form) }}
-            <div class="card">
-                <h3 class="card-header cardHeaderRoll">Votre Table</h3>
-                <div class="card-body">
-                    {{ form_row(form.titre) }}
-                    {{ form_row(form.type) }}
-                    {{ form_row(form.description) }}
+    <div class="container">
+        <div class="row">
+            <div id="tableJeuForm" class="col-lg-12">
+                <h3 id="titleFormTable">Organiser une Table</h3>
+                {{ form_start(form,{'attr': {'autocomplete': 'off'}}) }}
+                <div class="card">
+                    <h3 class="card-header cardHeaderRoll">Votre Table</h3>
+                    <div class="card-body">
+                        {{ form_row(form.titre) }}
+                        {{ form_row(form.type) }}
+                        {{ form_row(form.description) }}
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <h3 class="card-header cardHeaderRoll">Localisation de votre Table</h3>
-                <div class="card-body">
-                    {{ form_row(form.ville) }}
-                    {{ form_row(form.adresse) }}
+                <div class="card">
+                    <h3 class="card-header cardHeaderRoll">Localisation de votre Table</h3>
+                    <div class="card-body ">
+                        <div class="form-group">
+                            {{ form_label(form.ville) }}
+                            <div class="autocomplete">
+                                {{ form_widget(form.ville) }}
+                            </div>
+                        </div>
+                        {{ form_row(form.adresse) }}
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <h3 class="card-header cardHeaderRoll">Vos informations de contact</h3>
-                <div class="card-body">
-                    {{ form_end(form) }}
+                <div class="card">
+                    <h3 class="card-header cardHeaderRoll">Vos informations de contact</h3>
+                    <div class="card-body">
+                        {{ form_end(form) }}
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+{% endblock %}
+{% block javascripts %}
+    {{ parent() }}
+    <script src="{{ asset("js/organiser.js") }}"></script>
 {% endblock %}
