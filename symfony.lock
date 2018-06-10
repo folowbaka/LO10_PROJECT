@@ -80,11 +80,26 @@
     "egulias/email-validator": {
         "version": "2.1.4"
     },
+    "fgrosse/phpasn1": {
+        "version": "2.1.0"
+    },
     "fig/link-util": {
         "version": "1.0.0"
     },
+    "guzzlehttp/guzzle": {
+        "version": "6.3.3"
+    },
+    "guzzlehttp/promises": {
+        "version": "v1.3.1"
+    },
+    "guzzlehttp/psr7": {
+        "version": "1.4.2"
+    },
     "jdorn/sql-formatter": {
         "version": "v1.2.17"
+    },
+    "lcobucci/jwt": {
+        "version": "3.2.2"
     },
     "monolog/monolog": {
         "version": "1.23.0"
@@ -104,11 +119,17 @@
     "phpdocumentor/type-resolver": {
         "version": "0.4.0"
     },
+    "portier/client": {
+        "version": "v0.2.1"
+    },
     "psr/cache": {
         "version": "1.0.1"
     },
     "psr/container": {
         "version": "1.0.0"
+    },
+    "psr/http-message": {
+        "version": "1.0.1"
     },
     "psr/link": {
         "version": "1.0.0"
@@ -127,6 +148,9 @@
             "version": "4.0",
             "ref": "aaddfdf43cdecd4cf91f992052d76c2cadc04543"
         }
+    },
+    "spomky-labs/base64url": {
+        "version": "v1.0.2"
     },
     "swiftmailer/swiftmailer": {
         "version": "v6.0.2"
