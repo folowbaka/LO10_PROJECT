@@ -102,3 +102,15 @@
     background-color: DodgerBlue !important;
     color: #ffffff;
 }
+.btn-purple
+{
+    background-color: #8052be;
+    color: white;
+    font-weight: bold;
+}
+.btn-purple:hover
+{
+    background-color: #7038be;
+    color: white;
+    font-weight: bold;
+}

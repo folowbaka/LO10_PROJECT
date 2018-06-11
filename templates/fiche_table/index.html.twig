@@ -1,5 +1,8 @@
 {% extends 'base.html.twig' %}
-
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/ficheTable.css') }}">
+{% endblock %}
 {% block title %}Fiche Jeu{% endblock %}
 
 {% block body %}
@@ -12,11 +15,22 @@
                     <p class="card-text typeJeuFloat">{{ type }}</p>
                 </div>
             </div>
-            <div class="card col-lg-4">
-                <div class="card-body">
-                    <h5 class="card-title">Utilisateur</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <h3 class="cardTitreJeu borderPurple text-center">Localisation</h3>
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row align-items-center justify-content-center">
+
+                                <img class="center" src="https://api.adorable.io/avatars/80/{{ emailorga }}to Clipboard
+" alt="Card image cap" height="80" width="80">
+                        </div>
+                        <h5 class="card-title text-center">{{ pseudo }}</h5>
+                            <button class="btn text-center col-lg-12 btn-purple" >{{ emailorga }}</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class=" card-title cardTitreJeu borderPurple text-center">Localisation</h3>
+                    </div>
                 </div>
             </div>
         </div>

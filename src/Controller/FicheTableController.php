@@ -15,7 +15,10 @@ class FicheTableController extends Controller
     {
         $titre=$tableJeu->getTitre();
         $type=$tableJeu->getType()->getNom();
+        $organisateur=$tableJeu->getEmailUtilisateur();
+        $emailOrga=$organisateur->getEmail();
+        $pseudo=$organisateur->getPseudo();
         $description=$tableJeu->getDescription();
-        return $this->render('fiche_table/index.html.twig',array('titre'=>$titre,'type'=>$type,'description'=>$description));
+        return $this->render('fiche_table/index.html.twig',array('titre'=>$titre,'type'=>$type,'description'=>$description,"emailorga"=>$emailOrga,"pseudo"=>$pseudo));
     }
 }
