@@ -12,6 +12,7 @@ namespace App\DataFixtures;
 use App\Entity\Departement;
 use App\Entity\Region;
 use App\Entity\TableJeuType;
+use App\Entity\Utilisateur;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Common\Persistence\ObjectManager;
 
@@ -198,5 +199,9 @@ class AppFixtures extends Fixture
         $manager->persist($region);
         $region=new Region("france","Toute la France");
         $manager->persist($region);
+        //Utilisateur test
+        $utilisateur=new Utilisateur("test@email.com","testeurPasPro");
+        $manager->persist($utilisateur);
+
     }
 }

@@ -4,12 +4,14 @@ namespace App\Controller;
 
 use App\Entity\Departement;
 use App\Entity\Region;
+use App\Entity\Utilisateur;
 use App\Form\TableJeuType;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use App\Entity\TableJeu;
 use GuzzleHttp\Client;
+use Zend\Code\Scanner\Util;
 
 class OrganiserController extends Controller
 {
@@ -21,8 +23,11 @@ class OrganiserController extends Controller
         $table=new TableJeu();
         $form=$this->createForm(TableJeuType::class,$table);
         $form->handleRequest($request);
+        $utilisateur=$this->getDoctrine()->getRepository(Utilisateur::class)->find("test@email.com");
+        $email=$utilisateur->getEmail();
         if($form->isSubmitted() && $form->isValid())
         {
+
             $ville=$table->getVille();
             $villeExplo=explode(" ",$ville);
             $codePostal=$villeExplo[1];
@@ -33,13 +38,14 @@ class OrganiserController extends Controller
             $departement=$this->getDoctrine()
                 ->getRepository(Departement::class)->find($codeDepartement);
             $table->setRegion($departement->getRegion());
+            $table->setEmailUtilisateur($utilisateur);
             $entityManager->persist($table);
             $entityManager->flush();
 
             return $this->render('organiser/index.html.twig', array('form'=>$form->createView()
             ));
         }
-        return $this->render('organiser/index.html.twig', array('form'=>$form->createView()
+        return $this->render('organiser/index.html.twig', array('form'=>$form->createView(),"email"=>$email
         ));
     }
 }

@@ -30,7 +30,6 @@ class TableJeuType extends AbstractType
             ->add('description',TextareaType::class,array('attr'=>array('rows'=>10)))
             ->add('ville',TextType::class,array("label_attr"=>array("class"=>"form-control-label")))
             ->add('adresse',TextType::class,array('required'=>false))
-            ->add('emailOrganisateur',EmailType::class,array('label'=>'Email'))
             ->add('telephone',TelType::class)
             ->add('save',SubmitType::class)
             ;

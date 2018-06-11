@@ -45,11 +45,6 @@ class TableJeu
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $emailOrganisateur;
-
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
     private $telephone;
 
     /**
@@ -62,6 +57,12 @@ class TableJeu
      * @ORM\Column(type="string", length=5)
      */
     private $codePostal;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\Utilisateur", inversedBy="tablesJeu")
+     * @ORM\JoinColumn(nullable=false,referencedColumnName="email")
+     */
+    private $emailUtilisateur;
 
     public function getId()
     {
@@ -128,18 +129,6 @@ class TableJeu
         return $this;
     }
 
-    public function getEmailOrganisateur(): ?string
-    {
-        return $this->emailOrganisateur;
-    }
-
-    public function setEmailOrganisateur(string $emailOrganisateur): self
-    {
-        $this->emailOrganisateur = $emailOrganisateur;
-
-        return $this;
-    }
-
     public function getTelephone(): ?string
     {
         return $this->telephone;
@@ -172,6 +161,18 @@ class TableJeu
     public function setCodePostal(string $codePostal): self
     {
         $this->codePostal = $codePostal;
+
+        return $this;
+    }
+
+    public function getEmailUtilisateur(): ?Utilisateur
+    {
+        return $this->emailUtilisateur;
+    }
+
+    public function setEmailUtilisateur(?Utilisateur $emailUtilisateur): self
+    {
+        $this->emailUtilisateur = $emailUtilisateur;
 
         return $this;
     }
