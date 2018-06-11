@@ -80,9 +80,6 @@
     "egulias/email-validator": {
         "version": "2.1.4"
     },
-    "fgrosse/phpasn1": {
-        "version": "2.1.0"
-    },
     "eightpoints/guzzle-bundle": {
         "version": "7.0",
         "recipe": {
@@ -91,6 +88,9 @@
             "version": "7.0",
             "ref": "8be83603226d268ee8a93721b5bb77ec71d8d334"
         }
+    },
+    "fgrosse/phpasn1": {
+        "version": "2.1.0"
     },
     "fig/link-util": {
         "version": "1.0.0"
@@ -106,9 +106,6 @@
     },
     "jdorn/sql-formatter": {
         "version": "v1.2.17"
-    },
-    "lcobucci/jwt": {
-        "version": "3.2.2"
     },
     "jms/metadata": {
         "version": "1.6.0"
@@ -127,6 +124,9 @@
             "version": "2.0",
             "ref": "fe60ce509ef04a3f40da96e3979bc8d9b13b2372"
         }
+    },
+    "lcobucci/jwt": {
+        "version": "3.2.2"
     },
     "monolog/monolog": {
         "version": "1.23.0"
@@ -149,20 +149,17 @@
     "phpdocumentor/type-resolver": {
         "version": "0.4.0"
     },
-    "portier/client": {
-        "version": "v0.2.1"
-},
     "phpoption/phpoption": {
         "version": "1.5.0"
+    },
+    "portier/client": {
+        "version": "v0.2.1"
     },
     "psr/cache": {
         "version": "1.0.1"
     },
     "psr/container": {
         "version": "1.0.0"
-    },
-    "psr/http-message": {
-        "version": "1.0.1"
     },
     "psr/http-message": {
         "version": "1.0.1"
