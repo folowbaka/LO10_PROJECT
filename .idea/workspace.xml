@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9dca9ab2-ab73-4eca-ae64-1b59787d6ce7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20180610124723.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20180610174023.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-    </list>
+    <list default="true" id="9dca9ab2-ab73-4eca-ae64-1b59787d6ce7" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -288,7 +282,7 @@
     <option name="x" value="224" />
     <option name="y" value="140" />
     <option name="width" value="1820" />
-    <option name="height" value="1280" />
+    <option name="height" value="1281" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -600,7 +594,7 @@
       <workItem from="1527768486819" duration="15000" />
       <workItem from="1528283493892" duration="169000" />
       <workItem from="1528374068216" duration="6146000" />
-      <workItem from="1528721698577" duration="1281000" />
+      <workItem from="1528721698577" duration="1918000" />
     </task>
     <task id="LOCAL-00001" summary="Ajout page Annonce">
       <created>1525099924757</created>
@@ -651,15 +645,21 @@
       <option name="project" value="LOCAL" />
       <updated>1528386402361</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Fix : BDD">
+      <created>1528722999263</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1528722999263</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39404000" />
+    <option name="totallyTimeSpent" value="40041000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1577" height="1016" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -701,7 +701,8 @@
     <MESSAGE value="Ajout ANNONCE : Zone de boutons" />
     <MESSAGE value="Ajout ANNONCE : CSS Hover Boutons" />
     <MESSAGE value="AJOUT Recherche : Champ Recherche" />
-    <option name="LAST_COMMIT_MESSAGE" value="AJOUT Recherche : Champ Recherche" />
+    <MESSAGE value="Fix : BDD" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix : BDD" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/README.md">
