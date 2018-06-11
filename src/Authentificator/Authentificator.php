@@ -2,11 +2,11 @@
 
 namespace App\Authentificator;
 
-
-use Symfony\Component\Config\Definition\Exception\Exception;
+use Portier\Client\RedisStore;
 use Portier\Client\Client;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+
 
 class Authentificator
 {
@@ -40,7 +40,7 @@ class Authentificator
         $this->redis= new \Redis();
         $this->redis->pconnect('127.0.0.1', 6379);
         $this->portier = new Client(
-            new \Portier\Client\RedisStore( $this->redis),
+            new RedisStore( $this->redis),
             'http://localhost:8000/verify'
         );
     }
