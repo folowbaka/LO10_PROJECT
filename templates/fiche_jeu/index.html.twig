@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Fiche de Jeu{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10">
+                <div class="card">
+                    <h3 class="card-header cardHeaderRoll">{{ titre }}</h3>
+                    <img class="col-lg-3" src="{{ asset('images/slimedoogo.png') }}" alt="Card image cap" height="120" width="120">
+                    <div class="card-body">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

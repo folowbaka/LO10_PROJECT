@@ -2,11 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d05732d-9b22-4e54-801a-4034b9a6df7c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/public/assets/css/ficheTable.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/FicheJeuController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/JeuController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Jeu.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/JeuType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20180611211956.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Modele/Jeu.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fiche_jeu/ajouter.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/fiche_jeu/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/jeu/index.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/css/roll.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/roll.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/FicheTableController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/FicheTableController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/fiche_table/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/fiche_table/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/AnnonceController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AnnonceController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,32 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/fiche_table/index.html.twig">
+      <file leaf-file-name="recherche.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/annonce/recherche.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="22" column="91" selection-start-line="22" selection-start-column="91" selection-end-line="22" selection-end-column="91" />
-              <folding>
-                <element signature="e#12#26#0#Twig" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TokenAuthenticatedController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/TokenAuthenticatedController.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="FicheTableController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/FicheTableController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="16" column="45" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
-              <folding>
-                <element signature="e#34#58#0#PHP" expanded="true" />
-                <element signature="e#500#529#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="736">
+              <caret line="46" column="14" selection-start-line="37" selection-start-column="8" selection-end-line="46" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -66,8 +52,8 @@
       <file leaf-file-name="OrganiserController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller/OrganiserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="27" column="52" selection-start-line="27" selection-start-column="52" selection-end-line="27" selection-end-column="52" />
+            <state relative-caret-position="512">
+              <caret line="41" column="12" selection-start-line="41" selection-start-column="12" selection-end-line="42" selection-end-column="36" />
               <folding>
                 <element signature="e#34#61#0#PHP" expanded="true" />
               </folding>
@@ -75,64 +61,70 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="FicheJeuController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controller/FicheJeuController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="18" column="78" selection-start-line="18" selection-start-column="78" selection-end-line="18" selection-end-column="78" />
+              <folding>
+                <element signature="e#34#53#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/fiche_jeu/index.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="behavior.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../vote/js/behavior.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/fiche_table/index.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="128">
+              <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="40" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ajouter.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/fiche_jeu/ajouter.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="256">
+              <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/organiser/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="16">
-              <caret line="1" selection-start-line="1" selection-end-line="4" selection-end-column="14" />
+            <state relative-caret-position="224">
+              <caret line="14" column="75" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="75" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="organiser.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/assets/css/organiser.css">
+      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/jeu/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ficheTable.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/assets/css/ficheTable.css">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="roll.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/assets/css/roll.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="608">
-              <caret line="106" column="30" selection-start-line="106" selection-start-column="30" selection-end-line="106" selection-end-column="30" />
-              <folding>
-                <element signature="e#49#123#0" />
-                <element signature="e#208#228#0" />
-                <element signature="e#244#285#0" />
-                <element signature="e#315#384#0" />
-                <element signature="e#391#419#0" />
-                <element signature="e#434#457#0" />
-                <element signature="e#472#530#0" />
-                <element signature="e#545#623#0" />
-                <element signature="e#644#887#0" />
-                <element signature="e#912#1021#0" />
-                <element signature="e#1052#1117#0" />
-                <element signature="e#1139#1271#0" />
-                <element signature="e#1387#1630#0" />
-                <element signature="e#1655#1764#0" />
-                <element signature="e#1795#1860#0" />
-                <element signature="e#1882#2014#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AppFixtures.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DataFixtures/AppFixtures.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="763">
-              <caret line="202" column="37" selection-start-line="202" selection-start-column="37" selection-end-line="202" selection-end-column="53" />
-              <folding>
-                <element signature="e#124#151#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="112">
+              <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -191,7 +183,6 @@
         <option value="$PROJECT_DIR$/src/Migrations/Version20180522230538.php" />
         <option value="$PROJECT_DIR$/../../bin/php/php7.2.4/php.ini" />
         <option value="$PROJECT_DIR$/src/Controller/AccueilController.php" />
-        <option value="$PROJECT_DIR$/src/Controller/FicheJeuController.php" />
         <option value="$PROJECT_DIR$/public/assets/css/recherche.css" />
         <option value="$PROJECT_DIR$/src/Entity/Departement.php" />
         <option value="$PROJECT_DIR$/config/packages/eight_points_guzzle.yaml" />
@@ -204,9 +195,7 @@
         <option value="$PROJECT_DIR$/src/Modele/Table.php" />
         <option value="$PROJECT_DIR$/public/assets/js/organiser.js" />
         <option value="$PROJECT_DIR$/public/assets/js/roll.js" />
-        <option value="$PROJECT_DIR$/templates/base.html.twig" />
         <option value="$PROJECT_DIR$/public/assets/js/recherche.js" />
-        <option value="$PROJECT_DIR$/src/Controller/AnnonceController.php" />
         <option value="$PROJECT_DIR$/templates/annonce/recherche.html.twig" />
         <option value="$PROJECT_DIR$/public/assets/css/organiser.css" />
         <option value="$PROJECT_DIR$/src/Entity/TableJeu.php" />
@@ -219,6 +208,15 @@
         <option value="$PROJECT_DIR$/public/assets/css/ficheTable.css" />
         <option value="$PROJECT_DIR$/public/assets/css/roll.css" />
         <option value="$PROJECT_DIR$/templates/fiche_table/index.html.twig" />
+        <option value="$PROJECT_DIR$/templates/base.html.twig" />
+        <option value="$PROJECT_DIR$/src/Controller/JeuController.php" />
+        <option value="$PROJECT_DIR$/src/Controller/AnnonceController.php" />
+        <option value="$PROJECT_DIR$/templates/fiche_jeu/ajouter.html.twig" />
+        <option value="$PROJECT_DIR$/src/Form/JeuType.php" />
+        <option value="$PROJECT_DIR$/src/Modele/Jeu.php" />
+        <option value="$PROJECT_DIR$/templates/jeu/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/Controller/FicheJeuController.php" />
+        <option value="$PROJECT_DIR$/templates/fiche_jeu/index.html.twig" />
       </list>
     </option>
   </component>
@@ -373,6 +371,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -380,38 +379,6 @@
             <path>
               <item name="lo10" type="b2602c69:ProjectViewProjectNode" />
               <item name="lo10" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lo10" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lo10" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lo10" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lo10" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lo10" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lo10" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lo10" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lo10" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lo10" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lo10" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lo10" type="b2602c69:ProjectViewProjectNode" />
@@ -428,30 +395,6 @@
               <item name="lo10" type="b2602c69:ProjectViewProjectNode" />
               <item name="lo10" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="DataFixtures" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lo10" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lo10" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lo10" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lo10" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Form" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lo10" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lo10" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Migrations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lo10" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lo10" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Modele" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -463,13 +406,13 @@
               <item name="lo10" type="b2602c69:ProjectViewProjectNode" />
               <item name="lo10" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="accueil" type="462c0819:PsiDirectoryNode" />
+              <item name="annonce" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lo10" type="b2602c69:ProjectViewProjectNode" />
               <item name="lo10" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="annonce" type="462c0819:PsiDirectoryNode" />
+              <item name="fiche_jeu" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lo10" type="b2602c69:ProjectViewProjectNode" />
@@ -481,13 +424,18 @@
               <item name="lo10" type="b2602c69:ProjectViewProjectNode" />
               <item name="lo10" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="jeu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lo10" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lo10" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="organiser" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -498,7 +446,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.debug" />
@@ -507,117 +455,6 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\wamp\www\lo10\templates\annonce" />
     </key>
-  </component>
-  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
-    <UpdatedFiles>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Updated from server" />
-        <option name="myStatusName" value="Changed on server" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="CHANGED_ON_SERVER" />
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated" />
-          <option name="myStatusName" value="Changed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Created" />
-          <option name="myStatusName" value="Created" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Migrations/Version20180611131304.php</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Deleted" />
-          <option name="myStatusName" value="Deleted" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="true" />
-          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Restored" />
-          <option name="myStatusName" value="Will be restored" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="RESTORED" />
-        </FILE-GROUP>
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Modified" />
-        <option name="myStatusName" value="Modified" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MODIFIED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Skipped" />
-        <option name="myStatusName" value="Skipped" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SKIPPED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with conflicts" />
-        <option name="myStatusName" value="Will be merged with conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_CONFLICTS" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with tree conflicts" />
-        <option name="myStatusName" value="Merged with tree conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with property conflicts" />
-        <option name="myStatusName" value="Will be merged with property conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged" />
-        <option name="myStatusName" value="Will be merged" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Not in repository" />
-        <option name="myStatusName" value="Not in repository" />
-        <option name="mySupportsDeletion" value="true" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="UNKNOWN" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally added" />
-        <option name="myStatusName" value="Locally added" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_ADDED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally removed" />
-        <option name="myStatusName" value="Locally removed" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_REMOVED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Switched" />
-        <option name="myStatusName" value="Switched" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SWITCHED" />
-      </FILE-GROUP>
-    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -735,7 +572,10 @@
       <workItem from="1528457825751" duration="24523000" />
       <workItem from="1528588452644" duration="3004000" />
       <workItem from="1528631556993" duration="24256000" />
-      <workItem from="1528736885853" duration="6213000" />
+      <workItem from="1528736885853" duration="10572000" />
+      <workItem from="1528805463849" duration="13457000" />
+      <workItem from="1528918761735" duration="600000" />
+      <workItem from="1528921280315" duration="16000" />
     </task>
     <task id="LOCAL-00001" summary="Ajout page Annonce">
       <created>1525099924757</created>
@@ -940,7 +780,14 @@
       <option name="project" value="LOCAL" />
       <updated>1528744765825</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="UPDATE FICHE: adorable avatar pour la fiche">
+      <created>1528748443254</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1528748443254</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -952,7 +799,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="143420000" />
+    <option name="totallyTimeSpent" value="161852000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -965,26 +812,25 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49949798" weight="0.32917964" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.07981928" side_tool="true" weight="0.30218068" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.080823295" side_tool="true" visible="true" weight="0.25337487" />
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.3298193" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.498996" weight="0.32917964" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.498996" weight="0.32917964" />
       <window_info id="npm" order="2" sideWeight="0.20783132" side_tool="true" weight="0.22289157" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.498996" weight="0.32917964" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49849397" weight="0.32917964" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.79256964" visible="true" weight="0.14959839" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.78859526" visible="true" weight="0.13905622" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" sideWeight="0.20783132" side_tool="true" weight="0.22289157" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
-      <window_info id="Favorites" order="2" sideWeight="0.20743035" side_tool="true" weight="0.22289157" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.92018074" weight="0.30218068" />
+      <window_info id="Favorites" order="2" sideWeight="0.21140473" side_tool="true" visible="true" weight="0.13905622" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.9191767" weight="0.25337487" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="PHP-CGI Server" order="7" />
@@ -1001,7 +847,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Ajout ANNONCE : Zone de boutons" />
     <MESSAGE value="Ajout ANNONCE : Interactivé des régions" />
     <MESSAGE value="Setup du token" />
     <MESSAGE value="Ajout OrganiserController" />
@@ -1026,11 +871,12 @@
     <MESSAGE value="UPDATE : Recherce par titre,type et zone" />
     <MESSAGE value="UPDATE : Recherce par ville" />
     <MESSAGE value="Ajout : Utilisateur" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout : Utilisateur" />
+    <MESSAGE value="UPDATE FICHE: adorable avatar pour la fiche" />
+    <option name="LAST_COMMIT_MESSAGE" value="UPDATE FICHE: adorable avatar pour la fiche" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="21" />
+      <option name="time" value="22" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="index.php">
@@ -1039,19 +885,10 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/packages/doctrine.yaml">
+    <entry file="file://$PROJECT_DIR$/templates/fiche_jeu/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Migrations/Version20180522230457.php" />
-    <entry file="file://$PROJECT_DIR$/src/Migrations/Version20180522230538.php" />
-    <entry file="file://$PROJECT_DIR$/../../bin/php/php7.2.4/php.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14928">
-          <caret line="933" column="20" selection-start-line="933" selection-start-column="20" selection-end-line="933" selection-end-column="20" />
+        <state relative-caret-position="160">
+          <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -1063,8 +900,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/FicheJeuController.php" />
-    <entry file="file://$PROJECT_DIR$/templates/fiche_jeu/index.html.twig" />
     <entry file="file://$PROJECT_DIR$/config/services.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="427">
@@ -1157,13 +992,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Migrations/Version20180610124119.php" />
-    <entry file="file://$PROJECT_DIR$/src/Migrations/Version20180610124723.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="31" column="40" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Migrations/Version20180610124723.php" />
     <entry file="file://$PROJECT_DIR$/src/Entity/Departement.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="928">
@@ -1178,24 +1007,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Modele/Table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="46" column="46" selection-start-line="46" selection-start-column="46" selection-end-line="46" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/assets/js/annonce.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="496">
           <caret line="31" selection-start-line="31" selection-end-line="31" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="48" column="52" selection-start-line="48" selection-start-column="52" selection-end-line="48" selection-end-column="52" />
         </state>
       </provider>
     </entry>
@@ -1210,16 +1025,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
           <caret line="35" column="64" selection-start-line="35" selection-start-column="46" selection-end-line="35" selection-end-column="64" />
-          <folding>
-            <element signature="e#82#1298#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/annonce/recherche.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="30" column="46" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
         </state>
       </provider>
     </entry>
@@ -1244,23 +1049,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/TableJeuType.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/TableJeu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="64" column="13" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/Region.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="45" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Entity/Utilisateur.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -1278,37 +1066,142 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/DataFixtures/AppFixtures.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="763">
+          <caret line="202" column="37" selection-start-line="202" selection-start-column="37" selection-end-line="202" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/css/organiser.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/css/roll.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="106" column="30" selection-start-line="106" selection-start-column="30" selection-end-line="106" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Modele/Table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="39" column="8" selection-start-line="39" selection-start-column="8" selection-end-line="59" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="25" column="80" selection-start-line="25" selection-start-column="80" selection-end-line="25" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/TableJeu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="880">
+          <caret line="64" column="13" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Form/TableJeuType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="34" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Form/JeuType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/Region.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="45" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/FicheTableController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="16" column="45" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
+          <folding>
+            <element signature="e#34#58#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/AnnonceController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="902">
-          <caret line="70" column="34" selection-start-line="70" selection-start-column="34" selection-end-line="70" selection-end-column="34" />
+        <state relative-caret-position="128">
+          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
           <folding>
             <element signature="e#34#61#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Form/TableJeuType.php">
+    <entry file="file://$PROJECT_DIR$/src/Controller/JeuController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        <state relative-caret-position="336">
+          <caret line="21" column="34" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="23" />
+          <folding>
+            <element signature="e#34#53#0#PHP" expanded="true" />
+            <element signature="e#656#677#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DataFixtures/AppFixtures.php">
+    <entry file="file://$PROJECT_DIR$/src/Modele/Jeu.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="763">
-          <caret line="202" column="37" selection-start-line="202" selection-start-column="37" selection-end-line="202" selection-end-column="53" />
+        <state relative-caret-position="256">
+          <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/fiche_jeu/ajouter.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/jeu/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/fiche_table/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="40" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/FicheJeuController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="18" column="78" selection-start-line="18" selection-start-column="78" selection-end-line="18" selection-end-column="78" />
           <folding>
-            <element signature="e#124#151#0#PHP" expanded="true" />
+            <element signature="e#34#53#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/OrganiserController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="27" column="52" selection-start-line="27" selection-start-column="52" selection-end-line="27" selection-end-column="52" />
+        <state relative-caret-position="512">
+          <caret line="41" column="12" selection-start-line="41" selection-start-column="12" selection-end-line="42" selection-end-column="36" />
           <folding>
             <element signature="e#34#61#0#PHP" expanded="true" />
           </folding>
@@ -1322,68 +1215,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/TokenAuthenticatedController.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/FicheTableController.php">
+    <entry file="file://$PROJECT_DIR$/templates/annonce/recherche.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="16" column="45" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
-          <folding>
-            <element signature="e#34#58#0#PHP" expanded="true" />
-            <element signature="e#500#529#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="736">
+          <caret line="46" column="14" selection-start-line="37" selection-start-column="8" selection-end-line="46" selection-end-column="14" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/css/organiser.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/css/ficheTable.css">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/organiser/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="1" selection-start-line="1" selection-end-line="4" selection-end-column="14" />
+        <state relative-caret-position="224">
+          <caret line="14" column="75" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="75" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/css/roll.css">
+    <entry file="file://$PROJECT_DIR$/templates/fiche_jeu/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="106" column="30" selection-start-line="106" selection-start-column="30" selection-end-line="106" selection-end-column="30" />
-          <folding>
-            <element signature="e#49#123#0" />
-            <element signature="e#208#228#0" />
-            <element signature="e#244#285#0" />
-            <element signature="e#315#384#0" />
-            <element signature="e#391#419#0" />
-            <element signature="e#434#457#0" />
-            <element signature="e#472#530#0" />
-            <element signature="e#545#623#0" />
-            <element signature="e#644#887#0" />
-            <element signature="e#912#1021#0" />
-            <element signature="e#1052#1117#0" />
-            <element signature="e#1139#1271#0" />
-            <element signature="e#1387#1630#0" />
-            <element signature="e#1655#1764#0" />
-            <element signature="e#1795#1860#0" />
-            <element signature="e#1882#2014#0" />
-          </folding>
+        <state relative-caret-position="160">
+          <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/fiche_table/index.html.twig">
+    <entry file="file://$PROJECT_DIR$/../vote/js/behavior.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="22" column="91" selection-start-line="22" selection-start-column="91" selection-end-line="22" selection-end-column="91" />
+        <state>
           <folding>
-            <element signature="e#12#26#0#Twig" expanded="true" />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
