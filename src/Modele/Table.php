@@ -22,10 +22,7 @@ class Table
             $ville=$table->getVille();
             $type=$table->getType()->getId();
             $idJeu=$table->getId();
-            if($type==1)
-                $type="Société";
-            else
-                $type="Role";
+            $type=$table->getType()->getNom();
             $html.="<a  href=\"/fiche/table/$idJeu\" class=\"list-group-item list-group-item-action\"><div class=\"\">
                 <img class=\"img-fluid\" src=\"/assets/images/slimedoogo.png\"  alt=\"Card image cap\">
                 <div class=\"\">
@@ -47,10 +44,7 @@ class Table
             $ville=$table->getVille();
             $type=$table->getType()->getId();
             $idJeu=$table->getId();
-            if($type==1)
-                $type="Société";
-            else
-                $type="Role";
+            $type=$table->getType()->getNom();
             $html.="<a  href=\"/fiche/table/$idJeu\" class=\"list-group-item list-group-item-action\"><div class=\"\">
                 <div class=\"row\">
                     <div class=\"col-lg-3\">
