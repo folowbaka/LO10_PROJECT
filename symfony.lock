@@ -182,6 +182,15 @@
             "ref": "aaddfdf43cdecd4cf91f992052d76c2cadc04543"
         }
     },
+    "snc/redis-bundle": {
+        "version": "2.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "2.0",
+            "ref": "e9c58bfc414cfb7f06e8e5ae9f589868498f5d6a"
+        }
+    },
     "spomky-labs/base64url": {
         "version": "v1.0.2"
     },

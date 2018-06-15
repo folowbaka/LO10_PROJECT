@@ -6,6 +6,7 @@ use Portier\Client\RedisStore;
 use Portier\Client\Client;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Redis;
 
 
 class Authentificator
@@ -37,7 +38,7 @@ class Authentificator
 
     public function __construct()
     {
-        $this->redis= new \Redis();
+        $this->redis= new Redis;
         $this->redis->pconnect('127.0.0.1', 6379);
         $this->portier = new Client(
             new RedisStore( $this->redis),
