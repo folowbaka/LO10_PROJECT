@@ -94,7 +94,7 @@ class AnnonceController extends Controller
         $queryRequest.=" ORDER BY t.id ASC";
         $entityManager = $this->getDoctrine()->getManager();
         $query=$entityManager->createQuery($queryRequest)->setParameters($filter)->setMaxResults(15);
-        $resultsTables=$query->execute();
+        $resultTables=$query->execute();
         $typesjeu= $this->getDoctrine()
             ->getRepository(TableJeuType::class)
             ->findBy(array());
@@ -105,8 +105,8 @@ class AnnonceController extends Controller
             $nomType=$type->getNom();
             $typesjeuHtml.="<option value='$valType'>$nomType</option>";
         }
-        $resultsTablesHtml=Table::getTableRow($resultsTables);
-        return $this->render('annonce/recherche.html.twig',array("selectZoneHtml"=>$selectZone,"resultTables"=>$resultsTablesHtml,"region"=>$localisation,"departement"=>$departement,"typeJeu"=>$typesjeuHtml)
+        $resultTablesHtml=Table::getTableRow($resultTables);
+        return $this->render('annonce/recherche.html.twig',array("selectZoneHtml"=>$selectZone,"resultTables"=>$resultTablesHtml,"region"=>$localisation,"departement"=>$departement,"typeJeu"=>$typesjeuHtml)
         );
     }
 }
