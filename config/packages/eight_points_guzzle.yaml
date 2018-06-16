@@ -25,3 +25,12 @@ eight_points_guzzle:
                 headers:
                     Accept: "application/json"
                     User-Agent: "EightpointsGuzzleBundle/7.0"
+
+        score_apihtml:
+
+                    base_url: "http://scorelo10/"
+                    options:
+
+                        headers:
+                            Accept: "text/html"
+                            User-Agent: "EightpointsGuzzleBundle/7.0"
