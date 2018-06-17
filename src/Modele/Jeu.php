@@ -31,5 +31,12 @@ class Jeu
         }
         return $html;
     }
+    public static function transformURI($uri)
+    {
+        $uri=chop($uri,"https://");
+        $uri=chop($uri,"http://");
+        $uri=str_replace("/","-",$uri);
+        return $uri;
+    }
 
 }

@@ -1,7 +1,10 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}Fiche de Jeu{% endblock %}
-
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/rating.css') }}">
+{% endblock %}
 {% block body %}
     <div class="container">
         <div class="row">
@@ -10,9 +13,14 @@
                     <h3 class="card-header cardHeaderRoll">{{ titre }}</h3>
                     <img class="col-lg-3" src="{{ asset('images/slimedoogo.png') }}" alt="Card image cap" height="120" width="120">
                     <div class="card-body">
+                        {{ vote|raw }}
                     </div>
                 </div>
             </div>
         </div>
     </div>
+{% endblock %}
+{% block javascripts %}
+    {{ parent() }}
+    <script src="{{ asset('js/rating.js') }}"></script>
 {% endblock %}
