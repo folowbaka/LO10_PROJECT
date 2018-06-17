@@ -2,21 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0fb8e4b8-abc3-473a-af17-0dc5ff69cbfc" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Repository/JeuRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/symfony2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/eight_points_guzzle.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/eight_points_guzzle.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phpunit.xml.dist" beforeDir="false" afterPath="$PROJECT_DIR$/phpunit.xml.dist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/FicheJeuController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/FicheJeuController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Modele/Jeu.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modele/Jeu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/fiche_jeu/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/fiche_jeu/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/recherche.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/recherche.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/AnnonceController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AnnonceController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/annonce/recherche.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/annonce/recherche.html.twig" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,73 +18,70 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="lo10" />
+  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="FicheJeuController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controller/FicheJeuController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="9" column="57" selection-start-line="9" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OrganiserController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controller/OrganiserController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Table.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Modele/Table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-432" />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Jeu.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Modele/Jeu.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="384">
+              <caret line="29" column="27" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AnnonceController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controller/AnnonceController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="133" selection-start-line="133" selection-end-line="133" />
+              <folding>
+                <element signature="e#34#61#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TableJeu.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Entity/TableJeu.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="416">
+              <caret line="83" column="30" selection-start-line="83" selection-start-column="20" selection-end-line="83" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/fiche_jeu/index.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rating.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/assets/css/rating.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="91" column="35" selection-start-line="91" selection-start-column="35" selection-end-line="91" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_drawrating.php" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Downloads/www/vote/_drawrating.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="87" column="29" selection-start-line="86" selection-start-column="89" selection-end-line="87" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rating.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/assets/js/rating.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="organiser.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/assets/js/organiser.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="annonce.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/assets/js/annonce.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="recherche.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/assets/js/recherche.js">
+        <entry file="file://$PROJECT_DIR$/templates/annonce/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="roll.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/assets/js/roll.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="recherche.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/annonce/recherche.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" selection-start-line="3" selection-end-line="6" selection-end-column="14" />
               <folding>
                 <element signature="e#12#26#0#Twig" expanded="true" />
               </folding>
@@ -103,7 +89,43 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/fiche_jeu/index.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="recherche.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/annonce/recherche.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="271">
+              <caret line="39" column="37" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
+              <folding>
+                <element signature="e#12#26#0#Twig" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="recherche.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/assets/js/recherche.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="527">
+              <caret line="38" column="59" selection-start-line="38" selection-start-column="59" selection-end-line="38" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>serial</find>
+      <find>ser</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -117,10 +139,13 @@
         <option value="$PROJECT_DIR$/src/Repository/JeuRepository.php" />
         <option value="$PROJECT_DIR$/config/packages/eight_points_guzzle.yaml" />
         <option value="$PROJECT_DIR$/src/Controller/FicheJeuController.php" />
-        <option value="$PROJECT_DIR$/templates/fiche_jeu/index.html.twig" />
         <option value="$PROJECT_DIR$/public/assets/css/rating.css" />
         <option value="$PROJECT_DIR$/config/packages/nelmio_cors.yaml" />
         <option value="$PROJECT_DIR$/public/assets/js/rating.js" />
+        <option value="$PROJECT_DIR$/templates/fiche_jeu/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/Controller/AnnonceController.php" />
+        <option value="$PROJECT_DIR$/templates/annonce/recherche.html.twig" />
+        <option value="$PROJECT_DIR$/public/assets/js/recherche.js" />
       </list>
     </option>
   </component>
@@ -263,6 +288,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -297,13 +323,6 @@
               <item name="lo10" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lo10" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lo10" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -327,7 +346,19 @@
               <item name="lo10" type="b2602c69:ProjectViewProjectNode" />
               <item name="lo10" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="EventSubscriber" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lo10" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lo10" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Form" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lo10" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lo10" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Migrations" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lo10" type="b2602c69:ProjectViewProjectNode" />
@@ -350,12 +381,6 @@
               <item name="lo10" type="b2602c69:ProjectViewProjectNode" />
               <item name="lo10" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="accueil" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lo10" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lo10" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="annonce" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -364,11 +389,15 @@
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="fiche_jeu" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="lo10" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lo10" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -468,40 +497,50 @@
       <workItem from="1529083048158" duration="96000" />
       <workItem from="1529087631284" duration="1545000" />
       <workItem from="1529096089330" duration="12407000" />
+      <workItem from="1529245270572" duration="3278000" />
     </task>
+    <task id="LOCAL-00001" summary="Fix file missing">
+      <created>1529228711012</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1529228711012</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15725000" />
+    <option name="totallyTimeSpent" value="19859000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50067115" side_tool="true" visible="true" weight="0.32905984" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50067115" side_tool="true" visible="true" weight="0.3281412" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27919462" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28263053" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49932885" weight="0.32905984" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="PHP-CGI Server" order="7" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49932885" weight="0.32905984" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -510,12 +549,63 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Fix file missing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix file missing" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <option name="time" value="1" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/../vote/js/behavior.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/JeuController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="21" column="34" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="23" />
+          <folding>
+            <element signature="e#34#53#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../add_vhost.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/services.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/packages/eight_points_guzzle.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/FicheJeuController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="44" column="5" lean-forward="true" selection-start-line="43" selection-start-column="81" selection-end-line="44" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Entity/Utilisateur.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -663,51 +753,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/Departement.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/Region.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/TableJeuType.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/TableJeu.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Kernel.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/Utilisateur.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-893">
-          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Entity/Jeu.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-85">
           <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Repository/TableJeuTypeRepository.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Modele/Jeu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="29" column="27" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Repository/TableJeuRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#34#58#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -727,36 +776,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Repository/JeuRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="400">
+          <caret line="27" column="44" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/packages/eight_points_guzzle.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="34" column="46" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/FicheJeuController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="24" column="47" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
-          <folding>
-            <element signature="e#34#53#0#PHP" expanded="true" />
-            <element signature="e#857#884#0#PHP" expanded="true" />
-            <element signature="e#1801#1830#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/fiche_jeu/ajouter.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#12#26#0#Twig" expanded="true" />
-          </folding>
+        <state relative-caret-position="336">
+          <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -767,12 +795,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/accueil/index.html.twig">
+    <entry file="file://$PROJECT_DIR$/public/assets/js/behavior.js" />
+    <entry file="file://$USER_HOME$/Downloads/www/vote/_drawrating.php" />
+    <entry file="file://$PROJECT_DIR$/public/assets/css/rating.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#12#26#0#Twig" expanded="true" />
-          </folding>
+        <state relative-caret-position="527">
+          <caret line="91" column="35" selection-start-line="91" selection-start-column="35" selection-end-line="91" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/packages/nelmio_cors.yaml" />
+    <entry file="file://$PROJECT_DIR$/public/assets/js/rating.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/Utilisateur.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Repository/UtilisateurRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-273" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/FicheTableController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/OrganiserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Modele/Table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-432" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Modele/Jeu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="29" column="27" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/fiche_jeu/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>
@@ -785,73 +866,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/TableJeu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="83" column="30" selection-start-line="83" selection-start-column="20" selection-end-line="83" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/FicheJeuController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="57" selection-start-line="9" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/AnnonceController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="133" selection-start-line="133" selection-end-line="133" />
+          <folding>
+            <element signature="e#34#61#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/annonce/recherche.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="6" selection-end-column="14" />
+        <state relative-caret-position="271">
+          <caret line="39" column="37" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
           <folding>
             <element signature="e#12#26#0#Twig" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/js/behavior.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-612">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/fiche_jeu/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/www/vote/_drawrating.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="87" column="29" selection-start-line="86" selection-start-column="89" selection-end-line="87" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/css/rating.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="91" column="35" selection-start-line="91" selection-start-column="35" selection-end-line="91" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/js/roll.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/js/organiser.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/assets/js/recherche.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/js/annonce.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/packages/nelmio_cors.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/js/rating.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        <state relative-caret-position="527">
+          <caret line="38" column="59" selection-start-line="38" selection-start-column="59" selection-end-line="38" selection-end-column="59" />
         </state>
       </provider>
     </entry>

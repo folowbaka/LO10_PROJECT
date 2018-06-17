@@ -5,11 +5,16 @@ namespace App\Controller;
 use App\Entity\Departement;
 use App\Entity\Region;
 use App\Entity\TableJeuType;
+use function GuzzleHttp\Psr7\build_query;
+use JMS\Serializer\SerializerBuilder;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use App\Entity\TableJeu;
 use App\Modele\Table;
 use Symfony\Component\HttpFoundation\Request;
+use JMS\SerializerBundle\JMSSerializerBundle;
+use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
+
 
 class AnnonceController extends Controller
 {
@@ -99,6 +104,22 @@ class AnnonceController extends Controller
             ->getRepository(TableJeuType::class)
             ->findBy(array());
         $typesjeuHtml="";
+        $resultTablesJson=array();
+        foreach ($resultTables as $table)
+        {
+            $idTable=$table->getId();
+            $titre=$table->getTitre();
+            $codePostal=$table->getCodePostal();
+            $link = $this->generateUrl(
+                'fiche_jeu', [
+                'id'=>$idTable
+            ],
+                UrlGeneratorInterface::ABSOLUTE_URL
+            );
+            $tableJson=array($idTable,$titre,$codePostal,$link);
+            array_push($resultTablesJson,$tableJson);
+
+        }
         foreach ($typesjeu as $type)
         {
             $valType=$type->getId();
@@ -106,7 +127,7 @@ class AnnonceController extends Controller
             $typesjeuHtml.="<option value='$valType'>$nomType</option>";
         }
         $resultTablesHtml=Table::getTableRow($resultTables);
-        return $this->render('annonce/recherche.html.twig',array("selectZoneHtml"=>$selectZone,"resultTables"=>$resultTablesHtml,"region"=>$localisation,"departement"=>$departement,"typeJeu"=>$typesjeuHtml)
+        return $this->render('annonce/recherche.html.twig',array("selectZoneHtml"=>$selectZone,"resultTables"=>$resultTablesHtml,"region"=>$localisation,"departement"=>$departement,"typeJeu"=>$typesjeuHtml,"resultTablesJson"=>$resultTablesJson)
         );
     }
 }

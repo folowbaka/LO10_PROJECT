@@ -37,7 +37,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-6">
-                <div class="list-group">
+                <div  id="listTable" class="list-group" data-tables-researched='{{ resultTablesJson| serialize }}'>
                     {{ resultTables | raw }}
                 </div>
             </div>
@@ -50,4 +50,5 @@
 {% block javascripts %}
     {{ parent() }}
     <script src="{{ asset("js/recherche.js") }}"></script>
+
 {% endblock %}
