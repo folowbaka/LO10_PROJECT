@@ -35,3 +35,5 @@ $(document).ready(function(){
     });
     autocompleteCity(document.getElementById("inputSearchVilleCp"));
 });
+var listTable = document.querySelector('#listTable');
+listTable = JSON.parse(listTable.dataset.tablesResearched);
