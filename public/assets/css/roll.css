@@ -114,3 +114,26 @@
     color: white;
     font-weight: bold;
 }
+.loginBtn
+{
+    height: 6rem;
+}
+.navbar .btn-purple
+{
+    height: 3rem;
+    border-radius: 0;
+    width: 100%;
+
+}
+.navbar .container
+{
+    height: 5rem;
+}
+#connectionBtn{
+
+    border-top: 1px solid #343a40;
+}
+#inscriptionBtn
+{
+    border-bottom: 1px solid #343a40;
+}

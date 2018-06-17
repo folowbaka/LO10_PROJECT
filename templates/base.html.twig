@@ -26,6 +26,18 @@
                     <a class="nav-item nav-link" href="{{ path("jeu") }}">JEUX</a>
                 </div>
             </div>
+            <div class="col-lg-2 loginBtn">
+                <div class="col-lg-12">
+                    <a href="#"  id="inscriptionBtn"class=" btn navbar-item btn-purple align-middle" >
+                        S'inscrire
+                    </a>
+                </div>
+                <div class="col-lg-12">
+                    <a href="{{ path('auth') }}" id="connectionBtn"class=" btn navbar-item btn-purple align-middle">
+                        Se connecter
+                    </a>
+                </div>
+            </div>
         </div>
     </nav>
         {% block navar %}
