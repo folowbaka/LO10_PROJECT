@@ -4,6 +4,7 @@
 {% block stylesheets %}
     {{ parent() }}
     <link rel="stylesheet" href="{{ asset('css/recherche.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/ol.css') }}">
 {% endblock %}
 {% block body %}
     <div class="container">
@@ -42,12 +43,13 @@
                 </div>
             </div>
             <div class="col-lg-6">
-                <h1>FUCKING CARTE</h1>
+                <div id="map" tabindex="0"></div>
             </div>
         </div>
     </div>
 {% endblock %}
 {% block javascripts %}
     {{ parent() }}
-    <script src="{{ asset("js/recherche.js") }}"></script>
+    <script src="{{ asset('js/recherche.js') }}"></script>
+    <script src="{{ asset('js/ol.js') }}"></script>
 {% endblock %}
