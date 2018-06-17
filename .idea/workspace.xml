@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5d05732d-9b22-4e54-801a-4034b9a6df7c" name="Default" comment="">
+    <list default="true" id="5d05732d-9b22-4e54-801a-4034b9a6df7c" name="Default" comment="FIX: Portier now works.">
       <change afterPath="$PROJECT_DIR$/templates/authentification/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Authentificator/Authentificator.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Authenticator/Authenticator.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/AuthenticatorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AuthenticatorController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,8 +26,8 @@
       <file leaf-file-name="Authenticator.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Authenticator/Authenticator.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="85" selection-start-line="85" selection-end-line="85" />
+            <state relative-caret-position="1411">
+              <caret line="83" column="70" selection-start-line="83" selection-start-column="70" selection-end-line="83" selection-end-column="70" />
               <folding>
                 <element signature="e#37#67#0#PHP" expanded="true" />
               </folding>
@@ -39,38 +35,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CurlMultiHandler.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Handler/CurlMultiHandler.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="58" selection-start-line="58" selection-end-line="58" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Kernel.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/symfony/http-kernel/Kernel.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="189" selection-start-line="189" selection-end-line="189" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ErrorHandler.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/symfony/debug/ErrorHandler.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="492">
-              <caret line="513" selection-start-line="513" selection-end-line="513" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AuthenticatorController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AuthenticatorController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Controller/AuthenticatorController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="474">
-              <caret line="38" selection-start-line="38" selection-end-line="38" />
+            <state relative-caret-position="663">
+              <caret line="39" column="1" lean-forward="true" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
               <folding>
                 <element signature="e#34#70#0#PHP" expanded="true" />
               </folding>
@@ -78,11 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HttpKernel.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/vendor/symfony/http-kernel/HttpKernel.php">
+      <file leaf-file-name="AccueilController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controller/AccueilController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="168" selection-start-line="168" selection-end-line="168" />
+            <state>
+              <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -173,8 +142,8 @@
         <option value="$PROJECT_DIR$/src/Authentificator/Authentificator.php" />
         <option value="$PROJECT_DIR$/src/Authentificator/Authenticator.php" />
         <option value="$PROJECT_DIR$/templates/authentification/index.html.twig" />
-        <option value="$PROJECT_DIR$/src/Controller/AuthenticatorController.php" />
         <option value="$PROJECT_DIR$/src/Authenticator/Authenticator.php" />
+        <option value="$PROJECT_DIR$/src/Controller/AuthenticatorController.php" />
       </list>
     </option>
   </component>
@@ -329,10 +298,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="y" value="-10" />
-    <option name="width" value="2580" />
-    <option name="height" value="1410" />
+    <option name="x" value="221" />
+    <option name="y" value="30" />
+    <option name="width" value="1550" />
+    <option name="height" value="1000" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -365,6 +334,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -435,19 +405,10 @@
               <item name="portier" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="lo10_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lo10_project" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="portier" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -672,7 +633,8 @@
       <workItem from="1529020897766" duration="700000" />
       <workItem from="1529056256797" duration="57000" />
       <workItem from="1529237481140" duration="526000" />
-      <workItem from="1529240880839" duration="13996000" />
+      <workItem from="1529240880839" duration="14666000" />
+      <workItem from="1529258925961" duration="174000" />
     </task>
     <task id="LOCAL-00001" summary="Ajout page Annonce">
       <created>1525099924757</created>
@@ -891,7 +853,14 @@
       <option name="project" value="LOCAL" />
       <updated>1529020919866</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Merge branch 'master' of https://github.com/folowbaka/lo10_project&#10;                       &#10;                       # Conflicts:&#10;                       #&#9;.idea/workspace.xml">
+      <created>1529258259395</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1529258259395</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -903,7 +872,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="158699000" />
+    <option name="totallyTimeSpent" value="159543000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -916,6 +885,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49949798" weight="0.32917964" />
@@ -925,26 +895,27 @@
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.07981928" side_tool="true" weight="0.30200633" />
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.3298193" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.498996" weight="0.3284055" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.498996" weight="0.32917964" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.498996" weight="0.3284055" />
       <window_info id="npm" order="2" sideWeight="0.20783132" side_tool="true" weight="0.22289157" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.498996" weight="0.32917964" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.79256964" visible="true" weight="0.14947917" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.79256964" visible="true" weight="0.14947917" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" sideWeight="0.20783132" side_tool="true" weight="0.22289157" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.92018074" weight="0.30200633" />
       <window_info id="Favorites" order="2" sideWeight="0.20743035" side_tool="true" weight="0.22289157" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.92018074" visible="true" weight="0.30200633" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32946146" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="PHP-CGI Server" order="7" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="PHP-CGI Server" order="7" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49497992" weight="0.3284055" />
     </layout>
   </component>
@@ -955,8 +926,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Setup du token" />
-    <MESSAGE value="Ajout OrganiserController" />
     <MESSAGE value="Doctrine et bdd PgSQL" />
     <MESSAGE value="Création de l'entité &quot;Table&quot;" />
     <MESSAGE value="Création de l'entité &quot;TableType&quot;" />
@@ -980,18 +949,13 @@
     <MESSAGE value="Ajout : Utilisateur" />
     <MESSAGE value="Merge branch 'master' of https://github.com/folowbaka/lo10_project&#10;&#10;# Conflicts:&#10;#&#9;.idea/php.xml&#10;#&#9;.idea/workspace.xml&#10;#&#9;src/Migrations/Version20180611131304.php" />
     <MESSAGE value="Merge branch 'master' of https://github.com/folowbaka/lo10_project&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://github.com/folowbaka/lo10_project&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
+    <MESSAGE value="Merge branch 'master' of https://github.com/folowbaka/lo10_project&#10;                       &#10;                       # Conflicts:&#10;                       #&#9;.idea/workspace.xml" />
+    <MESSAGE value="FIX: Portier now works." />
+    <option name="LAST_COMMIT_MESSAGE" value="FIX: Portier now works." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/src/Controller/AuthenticatorController.php</url>
-          <line>37</line>
-          <option name="timeStamp" value="43" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="44" />
+      <option name="time" value="45" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="index.php">
@@ -1158,9 +1122,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="731">
           <caret line="53" column="56" selection-start-line="53" selection-start-column="56" selection-end-line="53" selection-end-column="56" />
-          <folding>
-            <element signature="e#397#407#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1216,21 +1177,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="51" column="53" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="59" />
-          <folding>
-            <element signature="e#34#61#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/packages/snc_redis.yaml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/AccueilController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/authentification/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
@@ -1295,13 +1246,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Handler/CurlMultiHandler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="58" selection-start-line="58" selection-end-line="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/symfony/http-kernel/Kernel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="211">
@@ -1316,30 +1260,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/http-kernel/HttpKernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="168" selection-start-line="168" selection-end-line="168" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/guzzlehttp/guzzle/src/Handler/CurlMultiHandler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Authenticator/Authenticator.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="85" selection-start-line="85" selection-end-line="85" />
+        <state relative-caret-position="1411">
+          <caret line="83" column="70" selection-start-line="83" selection-start-column="70" selection-end-line="83" selection-end-column="70" />
           <folding>
             <element signature="e#37#67#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/AuthenticatorController.php">
+    <entry file="file://$PROJECT_DIR$/src/Controller/AccueilController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-          <folding>
-            <element signature="e#34#70#0#PHP" expanded="true" />
-          </folding>
+        <state>
+          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/http-kernel/HttpKernel.php">
+    <entry file="file://$PROJECT_DIR$/src/Controller/AuthenticatorController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="168" selection-start-line="168" selection-end-line="168" />
+        <state relative-caret-position="663">
+          <caret line="39" column="1" lean-forward="true" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
+          <folding>
+            <element signature="e#34#70#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

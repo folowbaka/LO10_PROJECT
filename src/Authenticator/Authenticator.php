@@ -1,15 +1,16 @@
 <?php
 
-namespace App\Authentificator;
+namespace App\Authenticator;
 
 use Portier\Client\RedisStore;
 use Portier\Client\Client;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Redis;
 
 
-class Authentificator
+class Authenticator extends Controller
 {
 
 
@@ -38,38 +39,61 @@ class Authentificator
 
     public function __construct()
     {
-        $this->redis= new Redis;
+        $this->redis= new Redis();
         $this->redis->pconnect('127.0.0.1', 6379);
         $this->portier = new Client(
             new RedisStore( $this->redis),
-            'http://localhost:8000/verify'
+            'http://lo10dev/verify'
         );
     }
 
-    public function auth(Request $req, Response $res) : Response
+    public function auth(Request $req) : Response
     {
+        $email = $req->request->get('email');
+        $authUrl = $this->portier->authenticate($email);
 
-        $authUrl = $this->portier->authenticate($req->get('email'));
 
-        return $res
+        $response = new Response(
+            'Content',
+            Response::HTTP_OK,
+            array('content-type' => 'text/html')
+        );
+
+        $response
             ->setStatusCode(303)
             ->headers->set('Location', $authUrl);
+
+        return $response;
     }
 
-    public function verify(Request $req, Response $res) : Response
+    public function verify(Request $req) : Response
     {
         try {
             $email = $this->portier->verify($req->get('id_token'));
 
-            $res = $res
+            $response = new Response(
+                'Content',
+                Response::HTTP_OK,
+                array('content-type' => 'text/html')
+            );
+
+            $response
                 ->setStatusCode(200)
                 ->headers->set('Content-Type', 'text/html; charset=utf-8');
 
-            //$res->getBody()->write();
+            $response->setContent('<p>Verified email address '.$email.'</p>');
 
-            return $res;
+            return $response;
         }catch (\Exception $e) {
             print_r($e->getMessage());
+            $response = new Response(
+                'Content',
+                Response::HTTP_INTERNAL_SERVER_ERROR,
+                array('content-type' => 'text/html')
+            );
+            $response->setContent($e);
+            return $response;
         }
+
     }
 }
