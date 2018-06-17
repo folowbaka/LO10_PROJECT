@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5d05732d-9b22-4e54-801a-4034b9a6df7c" name="Default" comment="FIX: Portier now works.">
-      <change afterPath="$PROJECT_DIR$/templates/authentification/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Authentificator/Authentificator.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Authenticator/Authenticator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/AuthenticatorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AuthenticatorController.php" afterDir="false" />
-    </list>
+    <list default="true" id="5d05732d-9b22-4e54-801a-4034b9a6df7c" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,11 +33,20 @@
       <file leaf-file-name="AuthenticatorController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Controller/AuthenticatorController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="39" column="1" lean-forward="true" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
+            <state relative-caret-position="612">
+              <caret line="36" column="53" lean-forward="true" selection-start-line="36" selection-start-column="53" selection-end-line="36" selection-end-column="53" />
               <folding>
                 <element signature="e#34#70#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="62" lean-forward="true" selection-start-line="5" selection-start-column="62" selection-end-line="5" selection-end-column="62" />
             </state>
           </provider>
         </entry>
@@ -51,7 +55,7 @@
         <entry file="file://$PROJECT_DIR$/src/Controller/AccueilController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+              <caret column="5" selection-start-column="5" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -634,7 +638,7 @@
       <workItem from="1529056256797" duration="57000" />
       <workItem from="1529237481140" duration="526000" />
       <workItem from="1529240880839" duration="14666000" />
-      <workItem from="1529258925961" duration="174000" />
+      <workItem from="1529258925961" duration="425000" />
     </task>
     <task id="LOCAL-00001" summary="Ajout page Annonce">
       <created>1525099924757</created>
@@ -860,7 +864,21 @@
       <option name="project" value="LOCAL" />
       <updated>1529258259395</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="FIX: Portier now works.">
+      <created>1529259288371</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1529259288371</updated>
+    </task>
+    <task id="LOCAL-00034" summary="FEATURE: Added a template for authentification">
+      <created>1529259330871</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1529259330871</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -872,7 +890,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="159543000" />
+    <option name="totallyTimeSpent" value="159794000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -926,7 +944,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Doctrine et bdd PgSQL" />
     <MESSAGE value="Création de l'entité &quot;Table&quot;" />
     <MESSAGE value="Création de l'entité &quot;TableType&quot;" />
     <MESSAGE value="Renommage des entité et ajout de fixtures pour remplissage" />
@@ -951,7 +968,8 @@
     <MESSAGE value="Merge branch 'master' of https://github.com/folowbaka/lo10_project&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
     <MESSAGE value="Merge branch 'master' of https://github.com/folowbaka/lo10_project&#10;                       &#10;                       # Conflicts:&#10;                       #&#9;.idea/workspace.xml" />
     <MESSAGE value="FIX: Portier now works." />
-    <option name="LAST_COMMIT_MESSAGE" value="FIX: Portier now works." />
+    <MESSAGE value="FEATURE: Added a template for authentification" />
+    <option name="LAST_COMMIT_MESSAGE" value="FEATURE: Added a template for authentification" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -982,13 +1000,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="496">
           <caret line="31" selection-start-line="31" selection-end-line="31" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="48" column="52" selection-start-line="48" selection-start-column="52" selection-end-line="48" selection-end-column="52" />
         </state>
       </provider>
     </entry>
@@ -1284,17 +1295,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="62" lean-forward="true" selection-start-line="5" selection-start-column="62" selection-end-line="5" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/AccueilController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/AuthenticatorController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="39" column="1" lean-forward="true" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
+        <state relative-caret-position="612">
+          <caret line="36" column="53" lean-forward="true" selection-start-line="36" selection-start-column="53" selection-end-line="36" selection-end-column="53" />
           <folding>
             <element signature="e#34#70#0#PHP" expanded="true" />
           </folding>
