@@ -21,9 +21,17 @@ class FicheJeuController extends Controller
     {
         $titre=$jeu->getTitre();
         $client   = $this->get('eight_points_guzzle.client.score_apihtml');
-        $clientMarkdown=$this->get('eight_points_guzzle.client.github_markdown');
         $idJeu=$jeu->getId();
         $description=$jeu->getDescription();
+        $descriptionMarkdown="";
+        if($description!="")
+        {
+            $clientMarkdown=$this->get('eight_points_guzzle.client.github_markdown');
+            $serializer = $this->get('jms_serializer');
+            $header=array("Content-Type"=>"application/json","User-Agent"=>"folowbaka");
+            $body=$serializer->serialize(array("text"=>$description,"mode"=>"gfm"), "json");
+            $descriptionMarkdown=$clientMarkdown->post("/markdown",array("header"=>$header,"body"=>$body))->getBody()->getContents();
+        }
         $link = $this->generateUrl(
             'fiche_jeu', [
             'id'=>$idJeu
@@ -32,10 +40,6 @@ class FicheJeuController extends Controller
         );
         $link=\App\Modele\Jeu::transformURI($link);
         $response = $client->get("/vote/$link")->getBody()->getContents();
-        $serializer = $this->get('jms_serializer');
-        $header=array("Content-Type"=>"application/json","User-Agent"=>"folowbaka");
-        $body=$serializer->serialize(array("text"=>$description,"mode"=>"gfm"), "json");
-        $descriptionMarkdown=$clientMarkdown->post("/markdown",array("header"=>$header,"body"=>$body))->getBody()->getContents();
         return $this->render('fiche_jeu/index.html.twig',array("titre"=>$titre,"vote"=>$response,"idJeu"=>$idJeu,"description"=>$description,"descriptionMarkdown"=>$descriptionMarkdown));
     }
     /**

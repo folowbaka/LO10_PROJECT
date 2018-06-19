@@ -28,13 +28,13 @@
                 </div>
             </div>
             <div class="col-lg-3 loginBtn">
-                {% if app.request.hasPreviousSession %}
+
                     {% if app.session.get("email")!="" and app.session.get("email")!=null%}
                         {{ include('loginSectionConnected.html.twig') }}
                     {% else %}
                         {{ include('loginSectionNotConnected.html.twig') }}
                     {% endif %}
-                {% endif %}
+
             </div>
         </div>
     </nav>
