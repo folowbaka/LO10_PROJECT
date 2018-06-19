@@ -22,7 +22,7 @@ class JeuType extends AbstractType
     {
         $builder
             ->add('titre',TextType::class)
-            ->add('save',SubmitType::class)
+            ->add('Valider',SubmitType::class)
         ;
     }
     public function configureOptions(OptionsResolver $resolver)

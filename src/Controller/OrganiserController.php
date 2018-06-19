@@ -41,9 +41,9 @@ class OrganiserController extends Controller
             $table->setEmailUtilisateur($utilisateur);
             $entityManager->persist($table);
             $entityManager->flush();
+            $idTable=$table->getId();
 
-            return $this->render('organiser/index.html.twig', array('form'=>$form->createView()
-            ));
+            return $this->redirectToRoute("fiche_table", array('id'=>$idTable));
         }
         return $this->render('organiser/index.html.twig', array('form'=>$form->createView(),"email"=>$email
         ));
