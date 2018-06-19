@@ -5,18 +5,21 @@
 {% block body %}
     <div class="container">
         <div class="row">
-            <div class="col-lg-3">
-                <div class="">
-                    <h5 class="card-header cardHeaderRoll text-center">Dernières Tables</h5>
-                    <div class="">
-                        <div class="list-group">
-                            <form class="demo" action="{{ path('auth') }}" method="POST">
-                                <p>Try out Portier by entering your email address below:</p>
-                                <input type=email name=email placeholder="you@example.com" />
-                                <input type=submit value="Log In" />
-                                <p><small><em>Try a Gmail and a non-Gmail address!</em></small></p>
-                            </form>
-                        </div>
+            <div class=" offset-lg-2 col-lg-8">
+                <div class="card">
+                    <h5 class="card-header cardHeaderRoll text-center">Veuillez vous authentifier</h5>
+                    <div class="card-body">
+                        <form class="demo" action="{{ path('auth') }}" method="POST">
+                            <p><b>Saisissez votre adresse email pour vous connecter:</b></p>
+                            <div class="form-group">
+                                <input class="form-control" type=email name=email placeholder="you@example.com" />
+                            </div>
+                            <div class="form-group">
+                                <div class="offset-lg-10 col-lg-2">
+                                    <input class="btn btn-black" type=submit value="Connection" />
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
