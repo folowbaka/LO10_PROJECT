@@ -55,15 +55,17 @@ class FicheJeuController extends Controller
             $entityManager=$this->getDoctrine()->getManager();
             $entityManager->persist($jeu);
             $entityManager->flush();
+            $idJeu=$jeu->getId();
             $client   = $this->get('eight_points_guzzle.client.score_api');
             $link = $this->generateUrl(
                 'fiche_jeu', [
-                'id'=>$jeu->getId()
+                'id'=>$idJeu
             ],
                 UrlGeneratorInterface::ABSOLUTE_URL
             );
             $link=\App\Modele\Jeu::transformURI($link);
             $response = $client->put("/vote/$link");
+            return $this->redirectToRoute("fiche_jeu",array("id"=>$idJeu));
         }
         return $this->render('fiche_jeu/ajouter.html.twig',array("form"=>$form->createView()));
     }
