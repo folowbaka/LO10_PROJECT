@@ -11,8 +11,15 @@
             <div class="card col-lg-8">
                 <img class="card-img-top" src="{{ asset('images/slimedoogo.png') }}" alt="Card image cap" height="400">
                 <div class="card-body">
-                    <h4 class="card-title cardTitreJeu">{{ titre }}</h4>
-                    <p class="card-text typeJeuFloat">{{ type }}</p>
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <h4 class="card-title cardTitreJeu">{{ titre }}</h4>
+                            <p class="card-text typeJeuFloat">{{ type }}</p>
+                        </div>
+                        <div class="offset-lg-6 col-lg-3">
+                            <img alt="qrcodeTable" src="https://qrcode.online/img/?type=url&size=5&data={{ path(app.request.attributes.get('_route'),app.request.attributes.get('_route_params')) }}">
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-4">
