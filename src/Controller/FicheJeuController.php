@@ -26,7 +26,7 @@ class FicheJeuController extends Controller
         );
         $link=\App\Modele\Jeu::transformURI($link);
         $response = $client->get("/vote/$link")->getBody()->getContents();
-        return $this->render('fiche_jeu/index.html.twig',array("titre"=>$titre));
+        return $this->render('fiche_jeu/index.html.twig',array("titre"=>$titre,"vote"=>$response));
     }
     /**
      * @Route("/fiche/jeu/", name="ajouter_fiche_jeu")
