@@ -1,4 +1,3 @@
-
 function autocompleteCity(inp) {
     /*the autocomplete function takes two arguments,
     the text field element and an array of possible autocompleted values:*/

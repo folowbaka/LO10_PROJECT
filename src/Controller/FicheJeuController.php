@@ -14,7 +14,7 @@ class FicheJeuController extends Controller
     /**
      * @Route("/fiche/jeu/{id}", name="fiche_jeu")
      */
-    public function index(Jeu $jeu)
+    public function index(Jeu $jeu,Request $request)
     {
         $titre=$jeu->getTitre();
         $client   = $this->get('eight_points_guzzle.client.score_apihtml');
@@ -26,7 +26,7 @@ class FicheJeuController extends Controller
         );
         $link=\App\Modele\Jeu::transformURI($link);
         $response = $client->get("/vote/$link")->getBody()->getContents();
-        return $this->render('fiche_jeu/index.html.twig',array("titre"=>$titre,"vote"=>"$response"));
+        return $this->render('fiche_jeu/index.html.twig',array("titre"=>$titre));
     }
     /**
      * @Route("/fiche/jeu/", name="ajouter_fiche_jeu")

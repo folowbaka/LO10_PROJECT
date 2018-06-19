@@ -6,6 +6,7 @@ use App\Authenticator\Authenticator;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Session\Session;
 
 
 class AuthenticatorController extends Controller
@@ -13,7 +14,7 @@ class AuthenticatorController extends Controller
     /**
      * @Route("/portier", name="portier")
      */
-    public function portier()
+    public function portier(Request $request)
     {
         return $this->render('authentification/index.html.twig');
     }
@@ -35,6 +36,19 @@ class AuthenticatorController extends Controller
     {
         $authenticator = new Authenticator();
         $response = $authenticator->verify($request);
+        $email=$response->getContent();
+        if($email && $response->getStatusCode()==200) {
+            $session = new Session();
+            $session->set("email", $email);
+        }
+        return $this->redirectToRoute("accueil");
+    }
+    /**
+     * @Route("/disconnect", name="disconnect")
+     */
+    public  function disconnect(Request $request)
+    {
+        $request->getSession()->invalidate();
         return $this->redirectToRoute("accueil");
     }
 }

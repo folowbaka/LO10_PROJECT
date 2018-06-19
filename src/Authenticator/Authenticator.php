@@ -70,7 +70,6 @@ class Authenticator extends Controller
     {
         try {
             $email = $this->portier->verify($req->get('id_token'));
-
             $response = new Response(
                 'Content',
                 Response::HTTP_OK,
@@ -81,7 +80,7 @@ class Authenticator extends Controller
                 ->setStatusCode(200)
                 ->headers->set('Content-Type', 'text/html; charset=utf-8');
 
-            $response->setContent('<p>Verified email address '.$email.'</p>');
+            $response->setContent($email);
 
             return $response;
         }catch (\Exception $e) {
