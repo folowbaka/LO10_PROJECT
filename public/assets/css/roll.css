@@ -114,3 +114,38 @@
     color: white;
     font-weight: bold;
 }
+.btn-black
+{
+    background-color: #343a40;
+    color: white;
+    font-weight: bold;
+}
+.btn-black:hover
+{
+    background-color: #3e454c;
+    color: white;
+    font-weight: bold;
+}
+.loginBtn
+{
+    height: 6rem;
+}
+.navbar .btn-purple
+{
+    height: 3rem;
+    border-radius: 0;
+    width: 100%;
+
+}
+.navbar .container
+{
+    height: 5rem;
+}
+#connectionBtn{
+
+    border-top: 1px solid #343a40;
+}
+#inscriptionBtn
+{
+    border-bottom: 1px solid #343a40;
+}

@@ -1,0 +1,16 @@
+#validationEditJeuBtn,#previewMarkBtn
+{
+    width: 100%;
+}
+#markdownEditArea
+{
+    display: none;
+}
+#previewMarkdown
+{
+    display: none;
+}
+#leftFichePart
+{
+    margin-top: 20px;
+}

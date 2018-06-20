@@ -9,7 +9,7 @@
 namespace App\Controller;
 
 
-interface TokenAuthenticatedController
+interface SessionAuthenticatedController
 {
 
 }

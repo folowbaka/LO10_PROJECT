@@ -4,16 +4,56 @@
 {% block stylesheets %}
     {{ parent() }}
     <link rel="stylesheet" href="{{ asset('css/rating.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/ficheJeu.css') }}">
 {% endblock %}
 {% block body %}
     <div class="container">
         <div class="row">
             <div class="col-lg-10">
                 <div class="card">
-                    <h3 class="card-header cardHeaderRoll">{{ titre }}</h3>
-                    <img class="col-lg-3" src="{{ asset('images/slimedoogo.png') }}" alt="Card image cap" height="120" width="120">
-                    <div class="card-body">
-                        {{ vote|raw }}
+                    <div class="card-header cardHeaderRoll">
+                        <div class="row">
+                            <div class="col-lg-11">
+                                <h3 class="">{{ titre }}</h3>
+                            </div>
+                            <div class="col-lg-1">
+                                <button id="editJeuBtn" class="btn btn-black"><i class="fas fa-edit"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div id="leftFichePart" class="col-lg-3">
+                            <img class="col-lg-12" src="{{ asset('images/cards.png') }}" alt="Card image cap" height="120" width="120">
+                            <div class="col-lg-12">
+                                {{ vote|raw }}
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="col-lg-12">
+                                <div id="markdownArea">
+                                    <h3>Description</h3>
+                                    <div id="jeuDescription">
+                                            {{ descriptionMarkdown|raw }}
+                                    </div>
+                                    <div id="markdownEditArea">
+                                        <textarea id="textareaMarkdown" name="textareaMarkdown"
+                                                  rows="20" style="width: 100%">{{ description }}
+                                        </textarea>
+                                        <div id="previewMarkdown">
+
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-3">
+                                                <button id="previewMarkBtn" class="btn btn-black">Preview</button>
+                                            </div>
+                                            <div class="offset-lg-6 col-lg-3">
+                                                <button id="validationEditJeuBtn" data-uri-edit="{{ path('edit_fiche_jeu_markdown',{"id":idJeu})  }}" class="btn btn-success">Valider</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -23,4 +63,5 @@
 {% block javascripts %}
     {{ parent() }}
     <script src="{{ asset('js/rating.js') }}"></script>
+    <script src="{{ asset('js/ficheJeu.js') }}"></script>
 {% endblock %}

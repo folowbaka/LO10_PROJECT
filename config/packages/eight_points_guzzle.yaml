@@ -34,3 +34,11 @@ eight_points_guzzle:
                         headers:
                             Accept: "text/html"
                             User-Agent: "EightpointsGuzzleBundle/7.0"
+
+        github_markdown:
+                    base_url : "https://api.github.com"
+                    options:
+                      headers:
+                              Accept: "text/html"
+                              User-Agent: "EightpointsGuzzleBundle/7.0"
+

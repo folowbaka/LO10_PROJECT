@@ -21,18 +21,16 @@ class AnnonceController extends Controller
     /**
      * @Route("/annonce", name="annonce")
      */
-    public function index()
+    public function index(Request $request)
     {
         return $this->render('annonce/index.html.twig', [
-            'controller_name' => 'AnnonceController',
-        ]);
+            'controller_name' => 'AnnonceController']);
     }
     /**
      * @Route("/annonce/recherche/{region}/{departement}", name="rechercheAnnonce")
      */
     public function recherche(Region $region,Request $request,$departement="")
     {
-
         $localisation=$region->getId();
         $regionNom=$region->getNom();
         $zoneRecherche=array("near"=>"Autour de moi", "france"=>"Toute la France");

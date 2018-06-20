@@ -1,4 +1,3 @@
-var map;
 $(document).ready(function(){
     /*
      * Display a map
@@ -63,7 +62,7 @@ $(document).ready(function(){
         }),
     });
 
-    map = new ol.Map({
+    var map = new ol.Map({
         target: 'map',
         controls: [],
         layers: [bgLayer, fgLayer],

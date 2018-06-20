@@ -13,7 +13,7 @@ use App\Entity\TableJeu;
 use GuzzleHttp\Client;
 use Zend\Code\Scanner\Util;
 
-class OrganiserController extends Controller
+class OrganiserController extends Controller implements SessionAuthenticatedController
 {
     /**
      * @Route("/organiser", name="organiser")
@@ -23,8 +23,8 @@ class OrganiserController extends Controller
         $table=new TableJeu();
         $form=$this->createForm(TableJeuType::class,$table);
         $form->handleRequest($request);
-        $utilisateur=$this->getDoctrine()->getRepository(Utilisateur::class)->find("test@email.com");
-        $email=$utilisateur->getEmail();
+        $email=$request->getSession()->get("email");
+        $utilisateur=$this->getDoctrine()->getRepository(Utilisateur::class)->find($email);
         if($form->isSubmitted() && $form->isValid())
         {
 
@@ -41,9 +41,9 @@ class OrganiserController extends Controller
             $table->setEmailUtilisateur($utilisateur);
             $entityManager->persist($table);
             $entityManager->flush();
+            $idTable=$table->getId();
 
-            return $this->render('organiser/index.html.twig', array('form'=>$form->createView()
-            ));
+            return $this->redirectToRoute("fiche_table", array('id'=>$idTable));
         }
         return $this->render('organiser/index.html.twig', array('form'=>$form->createView(),"email"=>$email
         ));

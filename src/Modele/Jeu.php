@@ -21,7 +21,7 @@ class Jeu
             $html.="<a  href=\"/fiche/jeu/$idJeu\" class=\"list-group-item list-group-item-action\"><div class=\"\">
                 <div class=\"row\">
                     <div class=\"col-lg-3\">
-                        <img class=\"img-fluid\" src=\"/assets/images/slimedoogo.png\"  alt=\"Card image cap\">
+                        <img class=\"img-fluid\" src=\"/assets/images/cards.png\"  alt=\"Card image cap\">
                     </div>
                     <div class=\"col-lg-3\">
                         <h5 class=\"card-title cardTitreJeu\">$titre</h5>

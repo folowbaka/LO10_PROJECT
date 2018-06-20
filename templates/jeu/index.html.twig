@@ -5,14 +5,17 @@
 {% block body %}
 <div class="container">
     <div class="row">
-            <h3 class="col-lg-4 cardTitreJeu">Fiche Jeu</h3>
+        <h3 class="col-lg-4 cardTitreJeu">Fiche Jeu</h3>
 
-        <div class="col-lg-2">
+        <div class="offset-lg-6 col-lg-2">
             <a  href="{{ path('ajouter_fiche_jeu') }}" class="btn btn-purple col-lg-12">Ajouter un jeu</a>
         </div>
     </div>
+    <div class="borderPurple">
+
+    </div>
     <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-12">
             <div class="list-group">
                 {{ resultJeuxHtml | raw }}
             </div>
