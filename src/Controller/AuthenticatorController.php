@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Authenticator\Authenticator;
+use App\Entity\Utilisateur;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
@@ -12,7 +13,7 @@ use Symfony\Component\HttpFoundation\Session\Session;
 class AuthenticatorController extends Controller
 {
     /**
-     * @Route("/portier", name="portier")
+     * @Route("/portier", name="portier",)
      */
     public function portier(Request $request)
     {
@@ -40,6 +41,15 @@ class AuthenticatorController extends Controller
         if($email && $response->getStatusCode()==200) {
             $session = new Session();
             $session->set("email", $email);
+            $utilisateur=$this->getDoctrine()->getRepository(Utilisateur::class)->find($email);
+            if($utilisateur==null)
+            {
+                $pseudo=explode("@",$email)[0];
+                $utilisateur=new Utilisateur($email,$pseudo);
+                $entityManager=$this->getDoctrine()->getManager();
+                $entityManager->persist($utilisateur);
+                $entityManager->flush();
+            }
         }
         return $this->redirectToRoute("accueil");
     }

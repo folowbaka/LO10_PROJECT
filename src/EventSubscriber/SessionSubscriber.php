@@ -37,17 +37,17 @@ class SessionSubscriber implements EventSubscriberInterface
             return;
         }
 
-        if ($controller[0] instanceof SessionAuthenticatedController) {
-            if($event->getRequest()->hasPreviousSession())
-            {
+        if ($controller[0] instanceof SessionAuthenticatedController)
+        {
+
                 $session = $event->getRequest()->getSession();
                 $email = $session->get("email");
-                if (!($session->get("email") != null && $session->get("email") != "")) {
-
+                if (!($session->get("email") != null && $session->get("email") != ""))
+                {
                     $connected = false;
+                    throw new AccessDeniedHttpException('Veuillez vous connectez');
                 } else
                     $connected = true;
-            }
         }
     }
     public static function getSubscribedEvents()

@@ -8,7 +8,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
-class AccueilController extends Controller implements SessionAuthenticatedController
+class AccueilController extends Controller
 {
     /**
      * @Route("/", name="accueil")
